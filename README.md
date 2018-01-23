@@ -10,3 +10,6 @@ $ rm -rf _site; bundle exec jekyll server --incremental
 ```
 
 and connect as `localhost:4000`.
+
+While rendering in git-pages packages will use
+[these versions](https://pages.github.com/versions/)
