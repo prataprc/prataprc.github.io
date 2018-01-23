@@ -15,7 +15,7 @@ stick with same specification, like 17" 1280x1024 resolution.
 
 Normally Graphics card come with DVI output, forcing you to buy monitors
 with DVI connectivity. Since we are buying for programming purpose, it is
-better to stick with VGA (thus saving some money) and buy a DVI-VGA adaptor.
+better to stick with VGA (thus saving some money) and buy a DVI-VGA adapter.
 But if you are a multimedia geek, then you might want to use DVI monitors.
 
 Graphics Card
@@ -32,7 +32,7 @@ Linux Drivers
 -------------
 
 Drivers can be installed via the distributions package manager, like for
-debian, `nvidia-glx` or `nvidia-glx-new` can be installed
+Debian, `nvidia-glx` or `nvidia-glx-new` can be installed
 or the drivers can be installed from [Nvidia Site][Nvidia-Site]
 Download the appropriate driver installation file, (which normally ends with
 '.run') and execute them
@@ -61,11 +61,11 @@ system booting.
 Enabling Dual monitors
 ----------------------
 
-After rebooting and logging in, goto, ::
+After rebooting and logging in, go to ::
 
     system -> Nvidia X Server Setting
 
-and configure for dual monitor by Enabling `TwinView` in 'X server Display
+And configure for dual monitor by Enabling `TwinView` in 'X server Display
 configuration'
 
 [Nvidia-site]: http://nvidia.com/page/drivers.html

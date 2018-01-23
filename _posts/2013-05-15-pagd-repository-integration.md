@@ -13,13 +13,13 @@ In case you are managing your site with git or mercurial repository, your can
 integrate them with pagd so that while generating the site pagd can gather
 useful, and some times more accurate meta-data, for each page from the
 repository. Just open the `_context.json` file under your site's
-`_contents` subdirectory and add the following context attribute
+`_contents` sub-directory and add the following context attribute
 
 ```json
 { "_xcontext" : "pagd.git" }
 ```
 
-note that context attributes defined with `_contents/_context.json` file is
+Note that context attributes defined with `_contents/_context.json` file is
 applicable to all page contents created under `_contents` sub-directory.
 
 If you want to integrate with mercurial repository, rename `pagd.git` to

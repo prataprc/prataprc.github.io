@@ -31,7 +31,7 @@ index:2 parsec.Terminal
 text: "hello" false
 ```
 
-with a fix to goparsec tool, our parsec works fine with the second i/p text.
+With a fix to goparsec tool, our parsec works fine with the second i/p text.
 
 ```bash
 text: "hello" 10 false

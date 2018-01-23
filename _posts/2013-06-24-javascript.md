@@ -19,7 +19,7 @@ language for sake of efficiency.
 
 <script src="https://gist.github.com/prataprc/d8f1b6607c854fcfa7b651f648f75ffb.js?file=literals.js"></script>
 
-other than primitive types - Number, String, Boolean, rest of them are
+Other than primitive types - Number, String, Boolean, rest of them are
 javascript objects. Javascript `Object` is the parent type for all
 user-defined types. Supports constructor pattern, prototype inheritance etc...
 
@@ -31,7 +31,7 @@ Following is a basic set of keywords in Javascript
 
 <script src="https://gist.github.com/prataprc/d8f1b6607c854fcfa7b651f648f75ffb.js?file=keywords.js"></script>
 
-note that `typeof` is unreliable in most implementation of Javascript. It
+Note that `typeof` is unreliable in most implementation of Javascript. It
 is better to use - `Object.prototype.toString(10)` to retrieve the type of an
 object, although you will have to process the returned string to remove the
 prefix.
@@ -43,14 +43,14 @@ Keywords that add conditional structure,
 
 <script src="https://gist.github.com/prataprc/d8f1b6607c854fcfa7b651f648f75ffb.js?file=condblocks.js"></script>
 
-only the ternary operator can be treated as expression rest every thing are
+Only the ternary operator can be treated as expression rest every thing are
 statements.
 
 Keywords that add looping structure,
 
 <script src="https://gist.github.com/prataprc/d8f1b6607c854fcfa7b651f648f75ffb.js?file=loop.js"></script>
 
-all keywords that add looping structure are to be treated as statements.
+All keywords that add looping structure are to be treated as statements.
 
 Now let us move on to operators. While `literals` bake data values directly
 into the language, for the sake of efficiency, `operators` are functions on
@@ -61,14 +61,14 @@ Arithmetic-operators
 
 <script src="https://gist.github.com/prataprc/d8f1b6607c854fcfa7b651f648f75ffb.js?file=ops_arith.js"></script>
 
-keep in mind that Javascript does lot of implicit type-coercions.
+Keep in mind that Javascript does lot of implicit type-coercion.
 
 Comparison-operators
 --------------------
 
 <script src="https://gist.github.com/prataprc/d8f1b6607c854fcfa7b651f648f75ffb.js?file=ops_comp.js"></script>
 
-there is no real way to compare equality of non-primitive objects and in many
+There is no real way to compare equality of non-primitive objects and in many
 cases it is better to stick with `===` instead of `==`. Former compares
 for both value and type, while the later compares only the value.
 
@@ -77,32 +77,32 @@ Logical-operators
 
 <script src="https://gist.github.com/prataprc/d8f1b6607c854fcfa7b651f648f75ffb.js?file=ops_logic.js"></script>
 
-Bitwise-operators
------------------
+Bit wise operators
+------------------
 
 <script src="https://gist.github.com/prataprc/d8f1b6607c854fcfa7b651f648f75ffb.js?file=ops_bitwise.js"></script>
 
-comments on the right side explain the output by demonstrating the operation
-in binary-format. Conceptually, the bitwise logical operators work as follows:
+Comments on the right side explain the output by demonstrating the operation
+in binary-format. Conceptually, the bit-wise logical operators work as follows:
 
 * the operands are converted to 32-bit integers and expressed by a series of
   bits (zeros and ones).
 * each bit in the first operand is paired with the corresponding bit in the
   second operand: first bit to first bit, second bit to second bit, and so on.
 * the operator is applied to each pair of bits, and the result is constructed
-  bitwise.
+  bit-wise.
 
 If you are a C programmer, you might already be knowing the
 difference between between arithmetic `>>` and logical `>>>` right shift.
 Otherwise, just remember the following points,
 
-* right-shift matters only to negative numbers that can be represented in
+* Right-shift matters only to negative numbers that can be represented in
   32-bit 2's complement.
-* arithmetic right-shift preserves the sign while logical does-not.
-* logical right-shift will stuff as many binary 0s on the left as that are
+* Arithmetic right-shift preserves the sign while logical does-not.
+* Logical right-shift will stuff as many binary 0s on the left as that are
   shifted out on the right.
 
-Looks like bitwise operations on large integers are left undefined in
+Looks like bit-wise operations on large integers are left undefined in
 Javascript.
 
 Assignment operators
@@ -110,7 +110,7 @@ Assignment operators
 
 <script src="https://gist.github.com/prataprc/d8f1b6607c854fcfa7b651f648f75ffb.js?file=ops_assign.js"></script>
 
-normally assignments are statement in many languages. In Javascript an
+Normally assignments are statement in many languages. In Javascript an
 assignment is treated like an expression, and based on the scope of the
 expression, the context where the side effects are created varies. It is
 explained in a separate section below.
@@ -130,18 +130,18 @@ wrong and it is difficult to catch this problem at compile time.
 
 <script src="https://gist.github.com/prataprc/d8f1b6607c854fcfa7b651f648f75ffb.js?file=types.js"></script>
 
-in the end of above gist, we demonstrate two other ways of creating a
+In the end of above gist, we demonstrate two other ways of creating a
 number-value 10 and `n === m` give false because the former is number-type
 while the later is object-type.
 
 Function and scope
 ------------------
 
-following gist shows some name-resolution gymnastics with javascript functions.
+Following gist shows some name-resolution gymnastics with javascript functions.
 
 <script src="https://gist.github.com/prataprc/d8f1b6607c854fcfa7b651f648f75ffb.js?file=function.js"></script>
 
-in javascript functions are the only means of code-abstraction and thereby
+In javascript functions are the only means of code-abstraction and thereby
 only form of scoping available for programmers. By default every function act
 as a closure, making its local namespace available for enclosed function
 definitions. And only those functions that are enclosed within the scope of an
@@ -159,12 +159,12 @@ And some gymnastics with scope.
 
 <script src="https://gist.github.com/prataprc/d8f1b6607c854fcfa7b651f648f75ffb.js?file=scope.js"></script>
 
-it is always a good practice to declare variables with `var`, so that it
+It is always a good practice to declare variables with `var`, so that it
 gets contained in the enclosing scope. Javascript can hoists declarations,
 that is, both var statements and function declarations will be moved to the
 top of the enclosing scope.
 
-name resolution order,
+Name resolution order,
 
 - In case there is a var foo statement in the current scope, use that.
 - If one of the function parameters is named foo, use that.
@@ -183,7 +183,7 @@ compiled to virtual-machine byte code and executed on the fly.
 
 <script src="https://gist.github.com/prataprc/d8f1b6607c854fcfa7b651f648f75ffb.js?file=eval.js"></script>
 
-a curious aspect here is that even statements like `if` blocks are executed
+A curious aspect here is that even statements like `if` blocks are executed
 as expression and value is returned. Note that it is not legal to do `a =
 if(true) {100} else {200}` in your `.js` file or under `<script>` tag of html.
 

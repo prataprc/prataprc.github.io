@@ -41,7 +41,7 @@ func main() {
 }
 ```
 
-above program, when executed, emits following output
+Above program, when executed, emits following output
 
 ```text
 0x2101fb150 0x210230040
@@ -51,7 +51,7 @@ above program, when executed, emits following output
 map[0x2101fb150:100]
 ```
 
-why does the map contain just one key ? why is the address of `x` in each
+Why does the map contain just one key ? Why is the address of `x` in each
 iteration is the same. The common type of misconception that leads to this
 confusion is the way we understand how `x` is declared and reused. The
 misconception can be explained by expanding the range loop into traditional
@@ -65,7 +65,7 @@ for i := 0; i < len(xs); i++ {
 }
 ```
 
-which is wrong, the correct way of expanding the range loop, as implemented by
+Which is wrong, the correct way of expanding the range loop, as implemented by
 go, would be,
 
 ```go

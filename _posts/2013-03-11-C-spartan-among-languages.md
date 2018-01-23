@@ -19,7 +19,7 @@ powerful way to introspect everything that is stored.
 
 *Lack of constructs*. This can also be called as lack-of-pretense. Many
 concepts and constructs that we observe in modern languages lack support
-from its hardware counter-part, there by, a software runtime is added to
+from its hardware counter-part, there by, a software run-time is added to
 augment the hardware and loose some performance in doing so.
 Nevertheless, present constructs and concepts provided by C are simply not
 enough for building large programs.

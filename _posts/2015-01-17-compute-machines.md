@@ -8,7 +8,7 @@ Saw this [post][post-link] and started musing on computing machines ...
 
 Firstly, lambda machines are not yet built.
 
-But we have [turing machines][turing-machines-link], so we had to worry
+But we have [Turing machines][turing-machines-link], so we had to worry
 about designing a fast [ISA][ISA-link] and efficient way to move data
 between memory and processor.
 

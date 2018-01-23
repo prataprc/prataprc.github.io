@@ -51,7 +51,7 @@ complexity:3 count:100 difficulty:40 seed:1123
 Time taken to evaluate 1182004uS
 ```
 
-took about 1.2 seconds ! On an average, this algorithm takes about 12
+Took about 1.2 seconds ! On an average, this algorithm takes about 12
 milliseconds to solve a puzzle. Note that we used a pure-sequential version
 of the algorithm for this measurements.
 
@@ -89,7 +89,7 @@ Above command generates 100 puzzles of complexity 3, 9x9 sudoku table,
 populating 40% of the slots. Same seed value will generate same set of tables.
 The script outputs five columns,
 
-* `1st column`, no. of puzzles solved.
+* `1st column`, no.of puzzles solved.
 * `2nd column` time taken to solve sequentially.
 * `3rd column` time taken to solve puzzles simultaneously, one erlang-process
   for each puzzle.
@@ -134,14 +134,14 @@ When performance of parallel execution is plotted on single-core, 2-core, and
 
 ![par](media/sudokucharts/par.png)
 
-we can observe that simple concurrency scales linearly with number of cores.
+We can observe that simple concurrency scales linearly with number of cores.
 
 When performance of concurrent algorithm, executed one after another in
 sequential mode, is plotted on single-core, 2-core, and 4-core variants,
 
 ![conc](media/sudokucharts/conc.png)
 
-shows that there is no improvement of using a concurrent version of the
+Shows that there is no improvement of using a concurrent version of the
 algorithm and neither a overhead of using it.
 
 Let us now apply simple concurrency and concurrent backtracking algorithm for

@@ -18,7 +18,7 @@ statements, of Reinhold Niebuhr:
                                             -- Reinhold Niebuhr
 ~~~~
 
-becomes,
+Becomes,
 
 ~~~ text
     Anything that is worth doing, ought to be true and beautiful.

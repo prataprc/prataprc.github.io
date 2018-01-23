@@ -121,7 +121,7 @@ position when opening a file.
 Programming languages
 ---------------------
 
-Now that we have an editor, here is a list of uber-cool languages that you should
+Now that we have an editor, here is a list of über-cool languages that you should
 install and play-around with,
 
 **lua**,
@@ -173,7 +173,7 @@ between these two versions, and there are still some applications/tools that
 are slowly changing to 3.x version.
 
 This leads to an interesting situation for developers, who may want to develop
-with Python2.x sometimes and with Python3.x other times. Normally get around this
+with Python-2.x sometimes and with Python-3.x other times. Normally get around this
 problem by using `virtualenv`.
 
 ```bash
@@ -183,7 +183,7 @@ sudo easy_install3 pip  # will give you the command pip-3.2 like kev's solution.
 sudo pip-3.2 install virtualenv
 ```
 
-Since Python2.x and setuptools will eventually get phased out (hopefully),
+Since Python-2.x and setuptools will eventually get phased out (hopefully),
 above gymnastic may not be relevant in the longer run.
 
 If you are authoring python package and uploading them into python-cheeseshop,
@@ -357,8 +357,8 @@ credentials for different repositories.
 
 **git**,
 
-Most popular among version control system is [git][git-link], thanks to linux and github
-for doing that.
+Most popular among version control system is [git][git-link], thanks to linux
+and github for doing that.
 
 ```bash
 sudo apt-get install git
@@ -379,7 +379,7 @@ git config --global user.email "anand@gmail.com" # Set your emailid
 git config --global core.editor /usr/bin/vim     # use editor
 ```
 
-the --global flag writes this setting into your global git config. If you
+The --global flag writes this setting into your global git config. If you
 remove that flag you can override the setting for your current repository.
 You can learn more with these [articles](https://help.github.com/articles).
 
@@ -413,7 +413,7 @@ sudo apt-get install bzr    # created and maintained by canonical-ubuntu
 cabal install darcs         # written in haskell
 ```
 
-in case you have not installed ghc and haskell-platform, it is explained
+In case you have not installed ghc and haskell-platform, it is explained
 else where in this article. Some say that [darcs][darcs-link] has the best support for
 cherry picking and in some sense true to the spirit of Distributed Version
 Control System.
@@ -428,7 +428,7 @@ sudo apt-get install sdcv
 sdcv -l
 ```
 
-you can download dictionaries and install them under ~/.stardict/ directory
+You can download dictionaries and install them under ~/.stardict/ directory
 and add following exports in your bashrc or zshrc file.
 
 ```bash
@@ -448,7 +448,7 @@ commonly used flags are:
 * `-nn` will let you simply know the hardware ID which is great for searching.
 
 
-It doesn't show USB hardware other than the USB busses.
+It doesn't show USB hardware other than the USB bus.
 
 Here are three real world examples:
 Graphics:

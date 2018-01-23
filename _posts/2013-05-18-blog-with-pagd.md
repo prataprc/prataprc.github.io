@@ -12,13 +12,13 @@ I started by listing down my requirements,
   move around.
 - by committing to the repository, my article gets published.
 - basic features like, wiki-style markup, code highlighting, referring to
-  image URL, etc ... are important.
+  image URL, etc are important.
 - customizable layouts and templates.
 
 And found that github can address some of those. It can host static sites for
 me - even plain old HTML files, and [pagd][pagd-link] filled up the remaining
 requirements. Please note that techniques explained here are suitable for
-folks who are using a linux distribution or Mac OS-X and comfortable with shell
+folks who are using a Linux distribution or Mac OS-X and comfortable with shell
 interface.
 
 How do I setup my blog site ?
@@ -27,13 +27,13 @@ How do I setup my blog site ?
 It is easy, create a virtual environment, install `pagd`, and use
 `pagd.myblog` plugin to create a site layout. Let us go one step at a time,
 
-First get Python3.x for your distribution, Pagd works only with Python3. In
-case of mac, you can use `brew install python3` to get the latest Python3.x
+First get Python-3.x for your distribution, Pagd works only with Python-3. In
+case of mac, you can use `brew install python3` to get the latest Python-3.x
 version.
 
 Second, setup a virtual environment to install Pagd and its dependencies. The
-following example assumes Python3.2 as your python version. You can change it
-to Python3.3 or later based on you machine's python version.
+following example assumes Python-3.2 as your python version. You can change it
+to Python-3.3 or later based on you machine's python version.
 
 ```bash
 # To install on ubuntu
@@ -47,7 +47,7 @@ pip install --upgrade setuptools pip
 pip install --upgrade virtualenv
 ```
 
-I hope that in coming future linux distributions will have python-3.x by
+I hope that in coming future Linux distributions will have python-3.x by
 default and comes with `pip` pre-installed, in which case executing
 `sudo pip install virtualenv` should suffice. Let us now create a virtual
 environment to play with `pagd`.
@@ -58,7 +58,7 @@ $ source env/bin/activate       # enter the virtual environment
 (env)$ pip install pagd
 ```
 
-The example suggests Python3.2, but you can use any later Python3 version.
+The example suggests Python-3.2, but you can use any later Python-3 version.
 Installing [pagd][pagd-link] package will provide you `pagd` command line
 script and as long as you are inside virtual environment the command will
 be available via `$PATH`.
@@ -130,7 +130,7 @@ and post your queries to their [mailing-list][mailing-link].
 
 Reference
 ---------
-* [python on mac][python-on-mac-link]: installing Python3.x on mac using home brew.
+* [python on mac][python-on-mac-link]: installing Python-3.x on mac using home brew.
 * [pagd][pagd-link]: Pagd microsite with documentation and internals.
 * [pluggdapps][pluggdapps-link]: Pagd depends on Pluggdapps design elements.
 * [tayra][tayra-link]: default templating language used in Pagd.

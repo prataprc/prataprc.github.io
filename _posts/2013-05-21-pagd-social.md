@@ -13,7 +13,7 @@ Comments and social sharing with disqus
 ---------------------------------------
 
 Normally it is better to encourage discussions through open networks like
-mailing-list, irc, twitter etc... If in case you want your readers to discuss
+mailing-list, IRC, twitter etc... If in case you want your readers to discuss
 your topic on the same page, you can do so by including the disqus plugin. But
 please note that comments will be saved on disqus server and are subjected to
 their policies.
@@ -25,7 +25,7 @@ your layout's config.json file,
 { "disqus" : true }
 ```
 
-you should also [sign-up with disqus](https://disqus.com/admin/signup/) and
+You should also [sign-up with disqus](https://disqus.com/admin/signup/) and
 copy the html snippet that they generate for you into the template file,
 `_templates/_social/disqus.html`, under your site-layout.
 
@@ -47,10 +47,10 @@ network) in your `config.json` file
 { "social_sharing" : "twitter,fb,hn,linkedin,gplus" }
 ```
 
-above example adds, Twitter, FaceBook, HackerNews, LinkedIn, Google+ social
+Above example adds, Twitter, FaceBook, HackerNews, LinkedIn, Google+ social
 buttons to my blog-pages. Note that the comma separated names mentioned above,
-like `hn`, `fg` etc... must correspond to a file-name under your
-site's template subdirectory. Before we get into that, first obtain the HTML
+like `hn`, `fg` etc must correspond to a file-name under your
+site's template sub-directory. Before we get into that, first obtain the HTML
 snippet that will integrate your pages with a social network, say for instance
 Twitter network. Once you have them just save them under the file
 `_templates/_social/twitter.html`. Likewise repeat this exercise for all the

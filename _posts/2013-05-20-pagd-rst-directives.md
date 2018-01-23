@@ -27,7 +27,7 @@ code in your article. In such cases wrap your code-snippets with
     }
 ```
 
-while generating your web site using [pagd][pagd-link], above block of code
+While generating your web site using [pagd][pagd-link], above block of code
 will be rendered like,
 
 ```c
@@ -47,7 +47,7 @@ inside our page. For such occasions,
 .. youtube:: 7-qGKqveZaM
 ```
 
-You can also apply custom styling for youtube widgets in your site my
+You can also apply custom styling for Youtube widgets in your site my
 modifying the CSS styling for `div.rst-youtube` selectors inside
 `media/myblog.css` file.
 
@@ -82,7 +82,7 @@ article, use the following directive,
 .. gist:: prataprc/5843946.js
 ```
 
-where `prataprc` is the user-name and it will expand to full URL - 
+Where `prataprc` is the user-name and it will expand to full URL - 
 https://gist.github.com/prataprc/5843946.js.
 
 To include a specific file from the gist,

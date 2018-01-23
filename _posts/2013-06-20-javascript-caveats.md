@@ -17,7 +17,7 @@ arrays passing in property name as index.
 
 <script src="https://gist.github.com/prataprc/d8f1b6607c854fcfa7b651f648f75ffb.js?file=caveat1.js"></script>
 
-note that if accessed using membership operator, property name is constrained
+Note that if accessed using membership operator, property name is constrained
 by identifier token rules.
 
 HasOwnProperty
@@ -39,7 +39,7 @@ function takes more time to complete than the timeout-value ?
 
 <script src="https://gist.github.com/prataprc/d8f1b6607c854fcfa7b651f648f75ffb.js?file=caveat3.js"></script>
 
-you can execute the above program to understand the behaviour of timeout
+You can execute the above program to understand the behavior of timeout
 handling in Javascript. But the fact is, it is bad programming to use
 setInterval a.k.a periodic-timeout if we doubt that the handler function is
 going to take more time than the next timeout. One possible solution is given
@@ -50,14 +50,14 @@ Shadowing undefined
 
 <script src="https://gist.github.com/prataprc/d8f1b6607c854fcfa7b651f648f75ffb.js?file=caveat4.js"></script>
 
-unfortunately, `undefined` can also be used as identifier.
+Unfortunately, `undefined` can also be used as identifier.
 
-Semicolons and leading paranthesis
+Semicolons and leading parenthesis
 ----------------------------------
 
 <script src="https://gist.github.com/prataprc/d8f1b6607c854fcfa7b651f648f75ffb.js?file=caveat5.js"></script>
 
-the call to foo and bar are treated as single statement without a semicolon
+The call to foo and bar are treated as single statement without a semicolon
 in-between, `foo()(bar(10))`.
 
 Deleting property names
@@ -81,16 +81,16 @@ Late-binding of this
 
 <script src="https://gist.github.com/prataprc/d8f1b6607c854fcfa7b651f648f75ffb.js?file=caveat7.js"></script>
 
-in the above example, `this` inside test function is not bound to `this`
+In the above example, `this` inside test function is not bound to `this`
 of `new Foo()` instance when its constructor is called. Instead it is bound
 to global object.
 
 Closures and namespace reference
 --------------------------------
 
-in closures, parent function's namespaces are only referred by enclosed
+In closures, parent function's namespaces are only referred by enclosed
 function, they are not copied to enclosed function's namespace.
 
 <script src="https://gist.github.com/prataprc/d8f1b6607c854fcfa7b651f648f75ffb.js?file=caveat8.js"></script>
 
-outputs 10, 10 times.
+Outputs 10, 10 times.

@@ -25,6 +25,6 @@ dependency.
 
 It just took me couple of releases to realize how circular dependency is
 cumbersome and painful during the release phase - it is difficult to make a
-working release without making sure that dependant releases are equally good.
+working release without making sure that dependent releases are equally good.
 This means that I had to go through couple of iteration of releases to make
 sure that all packages are stable and working.

@@ -7,14 +7,14 @@ permalink: error-handling.html
 **Golang** says, multi value returns or
 [panic/recover](http://blog.golang.org/error-handling-and-go)
 
-like most _practical_ languages they simply short-circuit
-the execution path. Ofcourse it will come back to bite us
+Like most _practical_ languages they simply short-circuit
+the execution path. Of course it will come back to bite us
 if side-effects are not adequately taken care. And multi-value
 return as an after-thought ?
 
 **Erlang** says, [let it crash](http://c2.com/cgi/wiki?LetItCrash)
 
-because the number of variables and assumptions are
+Because the number of variables and assumptions are
 so high that we will never ship if we had to get into
 every last detail.
 
@@ -22,7 +22,7 @@ every last detail.
 error handling shall not interfere with code
 composability - [rust-doc](https://doc.rust-lang.org/book/error-handling.html)
 
-if types are aligned then functions are composable, and
+If types are aligned then functions are composable, and
 they say algebraic-data-types is a clean solution rather
 than multi-value returns, but their error handling seem
 to be an ongoing story ?
@@ -31,13 +31,13 @@ to be an ongoing story ?
 un-handled exception is an error -
 [Haskell's exception](https://wiki.haskell.org/Exception)
 
-it takes a thesis in category theory and a monadic
+It takes a thesis in category theory and a monadic
 implementation to handle exceptions, after which
 every thing that follow becomes pure, and
 leaves rest of the programming world
 scratching its head …
 
-asserts, exceptions and error-returns - looks like
+Asserts, exceptions and error-returns - looks like
 sharpest minds in our industry are still deciphering
 a clean way out.
 
