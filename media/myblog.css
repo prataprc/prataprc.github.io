@@ -1,0 +1,301 @@
+/* CSS Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* standard styling, not specific to any tag-element */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    width : 800px;
+    min-width : 640px;
+    margin : 0px auto;
+    background-color : white;
+    word-spacing: 2px;
+    line-height: 1.5em;
+}
+
+h1, h2 {
+    margin : 15px 0px;
+    font-weight : bold;
+    font-size: larger;
+}
+
+b, strong {
+    font-weight: bold;
+}
+
+i, cite, em, var, address, dfn {
+    font-style: italic;
+}
+
+ul, ol {
+    list-style-type: disc;
+    margin: 10px 0 10px 30px;
+    padding: 0;
+}
+
+ul ul, ol ul {
+    list-style-type: circle;
+}
+
+dd {
+    margin-left : 30px;
+    margin-bottom : 10px;
+}
+
+p {
+    margin : 20px 0px;
+}
+
+img {
+    margin: 10px 10px;
+}
+
+em {
+    font-style : italic;
+}
+
+tt {
+    margin: 0px 2px;
+    padding: 0px 5px;
+    border: 1px solid #DDD;
+    border-radius: 3px;
+}
+
+.displaynone{
+    display: none;
+}
+
+/* Sytling specific to blog articles */
+
+div#myblog-page {                              /* Entire page */
+    padding : 10px 0px;
+}
+
+div#myblog-header {                            /* Header / navigation */
+    font-weight : bold;
+    font-size: larger;
+    padding-bottom: 15px;
+    border-bottom: 2px solid gray;
+    text-align: right;
+    text-transform: uppercase;
+}
+div#myblog-header nav {
+    padding : 5px 0px;
+    color : gray;
+}
+div#myblog-header nav a {
+    padding-left : 40px;
+    text-decoration : none;
+    color : gray;
+}
+
+div#myblog-container {                     /* container for blog article */
+    margin-top : 25px;
+}
+article {                                   /* article */
+    position: relative;
+    padding-bottom: 32px;
+}
+div.article-title {                         /* article title */
+    margin : 0px 0px 40px 0px;
+    font-weight : bold;
+    font-size : 25px;
+}
+div.article-summary {                       /* article summary */
+    font-weight : normal;
+    font-style : italic;
+    font-size : xx-small;
+    color : gray;
+}
+div.metaa, div.metaz {              /* meta-data for article */
+    font-family: "Lucida Console", Monaco, monospace;
+    font-weight : normal;
+    font-size : xx-small;
+    color : gray;
+    padding : 2px 0px;
+    line-height : 1.4em;
+}
+div.metaa {
+    margin: 15px 0px 0px 0px;
+}
+div.metaz {
+    padding: 5px 0px;
+}
+div.metaa .author {                 /* article author */
+    color: green;
+}
+div.metaa .date,                    /* article dates */
+div.metaz .last_modified {
+    color: gray;
+}
+div.content {                       /* article main content */
+    margin: 0px 0px 10px 0px;
+    font-size: 16px;
+}
+div.metaz .email {                  /* author email-id */
+}
+
+/* Social sharing with twitter, hackernews, facebook, etc ...*/
+#myblog-social {
+    height: 24px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0px 20px;
+}
+#myblog-social ul {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+#myblog-social ul li {
+    float: left;
+    position: relative;
+    list-style: none;
+    display: inline;
+}
+#myblog-social ul li.twitter {}
+#myblog-social ul li.fb { margin-right: 0px; }
+#myblog-social ul li.hn { margin-right: 0px; }
+#myblog-social ul li.linkedin { margin-right: 0px; }
+#myblog-social ul li.gplus {}
+
+/* Commenting and social sharing with disqus plugin */
+div.metaz #myblog-disqus {
+}
+
+/* Page footer, contains references, copyright notice etc ...*/
+div#myblog-footer {
+    font-size : smaller;
+    color : gray;
+    margin-bottom : 50px;
+}
+div#myblog-pagd {
+}
+div#myblog-copyright {
+    text-align : right;
+    float: right;
+}
+div#myblog-copyright span {
+    transform: rotate(180deg);
+    display: inline-block;
+}
+
+/* Styling for rst sourcode directive */
+div.highlight {
+    background-color: #EEE;
+    width : 95%;
+    margin : 0px auto;
+    padding : 5px;
+}
+
+/* Styling for rst youtube directive */
+object.rst-youtube {
+    width: 600px;
+    height: 365px;
+    margin: 20px 10%;
+}
+
+/* Styling for rst youtube directive */
+div.rst-gallery {
+}
+div.rst-gallery .gallery-title {
+    font-weight: bold;
+    color : gray;
+    font-size : smaller;
+}
+div.rst-gallery a {
+}
+div.rst-gallery img {
+    width : 75px;
+    height : 75px;
+    margin: 2px;
+}
+
+/* Styling for rst `gist` directive */
+div.gist {
+    word-spacing: 0px;
+}
+.gist .blob-code-inner {
+    font-size: larger;
+}
+
+/* Styling for ``index`` ``contents`` */
+div.index ul {
+    margin-left: 10px;
+    list-style-type: none;
+}
+div.index ul li a:link {
+    text-decoration: none;
+}
+
+/* Styling for ``contents`` rst directive */
+div.contents.topic {
+    float: right;
+    padding: 5px 10px;
+    border-left: 1px solid crimson;
+}
+div.contents.topic p.topic-title {
+    margin : 0px 0px 3px 0px;
+    font-weight : bold;
+    color : gray;
+}
+div.contents.topic ul {
+    list-style: none;
+    margin : 0px;
+    font-size : smaller;
+}
+div.contents.topic ul a {
+    text-decoration : none;
+}
+a.toc-backref {
+    text-decoration : none;
+    color : black;
+}
+
+div.nocomments {
+    background: lavenderblush;
+    color: crimson;
+    padding: 2px;
+    border-radius: 10px;
+}
