@@ -7,57 +7,57 @@ permalink: /projects/
 Golang
 ------
 
-[goparsec][goparsec-link], parser combinator library with standard set of
+[Goparsec][goparsec-link], parser combinator library with standard set of
 combinators, reg-ex based scanner and commonly used Terminal parsers..
 
-[monster][monster-link], production system in Go. Reverse of parsing,
+[Monster][monster-link], production system in Go. Reverse of parsing,
 given a BNF grammar generates text.
 
-[gofast][gofast-link], high performance transport protocol in golang.
+[Gofast][gofast-link], high performance transport protocol in golang.
 
-[gson][gson-link], collection of JSON algorithms in golang.
+[Gson][gson-link], collection of JSON algorithms in golang.
 Includes JSON processing.
 
-[golog][golog-link], logging library in golang, for golang.
+[Golog][golog-link], logging library in golang, for golang.
 
-[gosettings][gosettings-link], cettings and configuration for golang
+[Gosettings][gosettings-link], cettings and configuration for golang
 libraries and applications.
 
 
 Double entry accounting
 -----------------------
 
-[goledger][goledger-link], double entry accounting for currencies and
+[Goledger][goledger-link], double entry accounting for currencies and
 commodities.
 
-[tall2ledger][tall2ledger-link], convert tally books to ledger books.
+[Tall2ledger][tall2ledger-link], convert tally books to ledger books.
 
 Python
 ------
 
-[pagd][pagd-link], static site generator, this site was generated using
+[Pagd][pagd-link], static site generator, this site was generated using
 it. [Pagd documentation][pagd-doc-link] hosted in python cheese shop.
 
-[pluggdapps][pluggdapps-link], a component system in python.
+[Pluggdapps][pluggdapps-link], a component system in python.
 [Pluggdapps documentation][pluggdapps-doc-link] hosted in python cheese shop.
 
-[tayra][tayra-link], create concise, beautiful and highly re-usable HTML
+[Tayra][tayra-link], create concise, beautiful and highly re-usable HTML
 templates. [Tayra documentation][tayra-doc-link] hosted in python cheese shop.
 
-[tayrakit][tayrakit-link], widget toolkit using tayra.
+[Tayrakit][tayrakit-link], widget toolkit using tayra.
 
-[eazytext][eazytext-link], wiki markup language, unlike
+[Eazytext][eazytext-link], wiki markup language, unlike
 [Markdown][markdown-link], aims to give more options
 to users at the expense of looking little cluttered.
 
 Erlang
 ------
 
-[netscale][netscale-link], collection of distributed apps in erlang.
+[Netscale][netscale-link], collection of distributed apps in erlang.
 
-[sudoku][sudoku-link], sudoku puzzle generator and solver in erlang.
+[Sudoku][sudoku-link], sudoku puzzle generator and solver in erlang.
 
-[textmode][textmode-link], erlang + ncurses, terminal server for erlang
+[Textmode][textmode-link], erlang + ncurses, terminal server for erlang
 applications.
 
 
