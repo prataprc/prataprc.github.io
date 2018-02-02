@@ -34,6 +34,6 @@ permalink: /slides/
 * All methods exported on settings object are immutable, except Mixin.
 * Stable APIs, existing APIs are not going to change
 
-[slide1]: https://gitpitch.com/prataprc/gson/master?grs=github
-[slide2]: https://gitpitch.com/prataprc/golog/master?grs=github
-[slide3]: https://gitpitch.com/prataprc/gosettings/master?grs=github
+[slide1]: https://gitpitch.com/bnclabs/gson/master?grs=github
+[slide2]: https://gitpitch.com/bnclabs/golog/master?grs=github
+[slide3]: https://gitpitch.com/bnclabs/gosettings/master?grs=github

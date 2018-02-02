@@ -64,9 +64,9 @@ applications.
 [goparsec-link]: http://github.com/prataprc/goparsec
 [monster-link]: http://github.com/prataprc/monster
 [gofast-link]: http://github.com/prataprc/gofast
-[gson-link]: http://github.com/prataprc/gson
-[golog-link]: http://github.com/prataprc/gofast
-[gosettings-link]: http://github.com/prataprc/gosettings
+[gson-link]: http://github.com/bnclabs/gson
+[golog-link]: http://github.com/bnclabs/gofast
+[gosettings-link]: http://github.com/bnclabs/gosettings
 
 [goledger-link]: http://github.com/tn47/goledger
 [tall2ledger-link]: http://github.com/tn47/tall2ledger
