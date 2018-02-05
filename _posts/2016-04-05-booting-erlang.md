@@ -19,8 +19,8 @@ sys 0.01
 
 Looks like it takes about 1.130 Seconds - this includes both booting and shutdown
 times. `init:stop/0` is the proper way to shutdown Erlang virtual machine
-and we don't really know whether most of the time went, whether in booting the
-VM or to shutdown the VM. To figure this out let us try is using another method,
+and we don't really know where most of the time went, whether in booting the
+VM or to shutdown the VM. To figure this out let us try using another method,
 
 ```bash
 $ /usr/bin/time -p erl -noinput -noshell -s erlang halt

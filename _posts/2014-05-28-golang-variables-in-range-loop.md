@@ -21,7 +21,7 @@ func main() {
 }
 ```
 
-`xs` is the slice, `i` is the index for each iteration and `x` holds the value
+`xs` is the array, `i` is the index for each iteration and `x` holds the value
 for each iteration.
 
 Some times while doing the above pattern of programming, especially coming
@@ -65,8 +65,8 @@ for i := 0; i < len(xs); i++ {
 }
 ```
 
-Which is wrong, the correct way of expanding the range loop, as implemented by
-go, would be,
+Which is wrong, the correct way of expanding the range loop, in relation to
+how go would compile this code:
 
 ```go
 ym := make(map[*X]int) // the map we need to build
@@ -76,3 +76,7 @@ for i := 0; i < len(xs); i++ {
     ...
 }
 ```
+
+In the former case, x is declared and instantiated within the scope of
+the for loop. In the later case x is declared and instantiated just once
+outside the for-loop.

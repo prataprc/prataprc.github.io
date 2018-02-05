@@ -43,7 +43,7 @@ yip := parsec.And(
   the argument passed to construct the Atom parser.
 * `parsec.Int()` returns a parser that will match the input text for
   integer. It is same as constructing parser with
-  `parsec.Token(`-?[0-9]+`, "INT")`
+  `parsec.Token("-?[0-9]+", "INT")`
 * `Atom`, `Int`, `Token` are some of the standard parser constructors
   supplied by goparsec.
 * Subsequently, we can combine the terminal parsers using `And` combinator.
@@ -112,7 +112,7 @@ same pattern.
 
 **comma-separated-values**
 
-Parsing comma separated values can be more complex, but that gives us the
+Parsing comma separated values can be more complex, but that give us the
 opportunity to learn more about parsec.
 
 ```go
@@ -137,8 +137,8 @@ Values can be one of the following:
   the Nodify callback prunes away the beginning quote, end quote and
   return the golang string as ParsecNode.
 * An integer value.
-* An atom of alpha numeric characters including special chars `_.-`.
-  Atom always start with lower case or upper case alphabet.
+* An atom of alpha numeric characters including special chars `_.-`,
+  which always start with lower case or upper case alphabet.
 
 In the above parsing logic, values are parsed as yterm. Since a term
 can be one of the value described above, we use OrdChoice.

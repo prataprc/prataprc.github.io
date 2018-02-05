@@ -12,7 +12,7 @@ But we have [Turing machines][turing-machines-link], so we had to worry
 about designing a fast [ISA][ISA-link] and efficient way to move data
 between memory and processor.
 
-[RISC][RISC-link] - did show us on how to pack a processor efficiently
+[RISC][RISC-link] - did show us how to pack a processor efficiently
 and make it fast via pipe-lining, branch prediction et al..
 
 Btw, processor got faster while memory lagged behind.

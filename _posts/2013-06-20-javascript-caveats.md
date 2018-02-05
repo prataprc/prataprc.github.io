@@ -4,16 +4,16 @@ title: "Caveats in Javascript"
 permalink: javascript-caveats.html
 ---
 
-Every language has exceptional situations to common rules, that were originally
-explained as part of its specification. They end up as caveats in programmer's
-mind.
+Every language has exceptional situations to common rules that are
+explained as part of its specification. They end up as caveats in
+programmer's mind.
 
 Interchanging properties as objects and associative array
 ---------------------------------------------------------
 
-Javascript objects are property-maps and property names can be accessed using
-the membership operator. Likewise, objects can be accessed like associative
-arrays passing in property name as index.
+Javascript objects are property-maps and property names can be accessed
+using the membership operator. Likewise, objects can be accessed like
+associative arrays passing in property name as index.
 
 <script src="https://gist.github.com/prataprc/d8f1b6607c854fcfa7b651f648f75ffb.js?file=caveat1.js"></script>
 
@@ -23,7 +23,7 @@ by identifier token rules.
 HasOwnProperty
 --------------
 
-Any reference to JS object-property will follow the chain of prototype
+A reference to JS object-property will follow the chain of prototype
 inheritance, so the only way to figure out whether a property is directly
 attached to the object is by using `hasOwnProperty` method call on the
 object. But what if the method is overridden accidentally ?

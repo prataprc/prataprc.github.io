@@ -18,7 +18,7 @@ permalink: hello-world.html
 
 **erlang:** io:format("Hello world !!~n")
 
-**haskell:** putStrLn "Hello world !!")
+**haskell:** putStrLn "Hello world !!"
 
 **lua:** io.write("Hello world !!\n")
 
@@ -27,3 +27,6 @@ permalink: hello-world.html
 **clojure:** (println "Hello world !!")
 
 **rust:** println!("Hello world !!")
+
+$
+<span class="blinkcursor">█</span>

@@ -12,7 +12,7 @@ The backtracking algorithm that solves sudoku puzzle has exponential
 complexity, and suffers from pathological combinations that can throw the
 algorithm into a for-ever-loop.
 
-The algorithm works on an unsolved sudoku puzzle, with N elements
+This algorithm work on an unsolved sudoku puzzle, with N elements
 pre-populated - which is the measure of difficulty. That is, say for a 9x9
 table of numbers, may be just 10 can be pre-populated. The algorithm uses a
 double recursive backtracking logic to find the right combination of numbers
@@ -39,8 +39,8 @@ A pathological case is an input combinations that can make the puzzle solver to
 keep executing bad paths for a long time before finding the right path.
 
 Any backtracking algorithm, while executing, will have to make several
-choices  before finding the right solution.  We will take our Sudoku puzzle
-solver as an  example and expound further -
+choices before finding the right solution.  We will take our Sudoku puzzle
+solver as an example and expound further -
 
 For a 9x9 puzzle, with 10 elements pre-populated,  should leave 71 slots
 unfilled.  And for each slot there are 9 choices to make 

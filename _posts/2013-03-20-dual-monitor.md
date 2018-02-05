@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to setup dual monitors for Ubuntu"
-permalink: eternal-struggle.html
+permalink: dual-monitor.html
 ---
 
 Productivity can substantially increase with dual monitors, especially with

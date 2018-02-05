@@ -10,7 +10,7 @@ Input text, sometime, have recursive patterns. For example:
 10 * ((20 + 30) * 40)
 ```
 
-Let us try to build a plain text calculator, where input in an expression of
+Let us try to build a plain text calculator, where input is an expression of
 arithmetic operations on numbers. Operations include addition, subtraction,
 multiplication and division, in which multiplication and division take higher
 precedence over addition and subtraction.

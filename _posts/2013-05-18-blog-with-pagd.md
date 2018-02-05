@@ -33,7 +33,7 @@ version.
 
 Second, setup a virtual environment to install Pagd and its dependencies. The
 following example assumes Python-3.2 as your python version. You can change it
-to Python-3.3 or later based on you machine's python version.
+to Python-3.3 or later based on your machine's python version.
 
 ```bash
 # To install on ubuntu
@@ -63,10 +63,10 @@ Installing [pagd][pagd-link] package will provide you `pagd` command line
 script and as long as you are inside virtual environment the command will
 be available via `$PATH`.
 
-`creating my blog layout`
+**creating my blog layout**
 
-One of the first thing that we do when using `pagd` is to create a layout
-- in this case a layout implemented by `pagd.myblog` plugin. The name of the
+One of the first thing that we do when using `pagd`is to create a layout,
+in this case a layout implemented by `pagd.myblog` plugin. The name of the
 plugin is `myblog` which comes pre-packaged with Pagd, hence we address it as
 `pagd.myblog`.
 

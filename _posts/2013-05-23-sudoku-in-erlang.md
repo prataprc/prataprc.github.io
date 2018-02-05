@@ -22,10 +22,17 @@ Erlang here is that it may save us from some of those difficulties. Let us
 experiment couple of scenarios using [sudoku][sudoku-link]. There is a
 separate [article][sudoku-pathological] describing the algorithm and why it
 will make sense in this context. Source code for the same can be found in
-[github][github-link]. You can find more details on how to use the sudoku
-script there, that we will using it here.
+[github][github-link]. You can find more details on the scripts that we will
+using it here.
 
-Now, let us have some fun.
+Sequential, parallel and concurrent algorithms
+---------------------------------------------
+
+**Sequential** version of the sudoku puzzle solver is implemented as a
+single threaded program. An Erlang process is spawned to solve a single
+puzzle, which will sequentially track and back-track empty slots filling
+them with possible correct values. It took 6.3 ms to solve just one
+puzzle,
 
 ```bash
 # solve a single sudoku puzzle of complexity 3 (9x9) and difficulty 40%
@@ -34,15 +41,11 @@ complexity:3 count:1 difficulty:40 seed:1123
 Time taken to evaluate 6329uS
 ```
 
-Above, sudoku script generates a 9x9 puzzle, populating 40% of the slots. And it
-took 6.3 milliseconds to solve the puzzle. The `-s` option provides seed
-value to the random-generator - so that same set of puzzles will be generated
-for the same seed value. Note that the puzzle is solved using a sequential
-backtracking algorithm explained above.
-
-`All measurements are taken with my 2GHz Core-2 Quad desktop`.
-
-Using the same parameters but solving 100 puzzles - `sequentially`,
+With above parameters to sudoku script, we generated a 9x9 puzzle, populating
+40% of the slots, with complexity of 3. The `-s` option provides seed
+value to the random-generator - so that same puzzles will be generated
+for the same seed value. To solve 100 puzzles one after another using the
+same erlang process, utilizing just one core, takes about 1.18 seconds.
 
 ```bash
 # solve a single sudoku puzzle of complexity 3 (9x9) and difficulty 40%
@@ -50,34 +53,19 @@ $ bin/sudoku -c 3 -d 40 -s 1123 -n 100
 complexity:3 count:100 difficulty:40 seed:1123
 Time taken to evaluate 1182004uS
 ```
+All measurements are taken with my 2GHz Core-2 Quad desktop`.
 
-Took about 1.2 seconds ! On an average, this algorithm takes about 12
-milliseconds to solve a puzzle. Note that we used a pure-sequential version
-of the algorithm for this measurements.
+**Parallel** version of the sudoku puzzle solver spawns an erlang process
+for each puzzle and there by it can utilize all the available cores. This is
+not really a concurrent algorithm, but just plain vanilla parallel batch
+processing utilizing multiple cores. This is similar to modern web servers
+utilizing multiple cores.
 
-Simple concurrency with erlang
-------------------------------
-
-Before we transform the algorithm into a concurrent one, we will try
-to measure how simple-concurrency, like what we see with web-servers serving
-simultaneous requests, fair with erlang. The objective here is to solve large
-number of puzzles - first, sequentially one after the other - next,
-simultaneously spawning one process for each puzzle. Thus we measure its
-scalability and efficiency.
-
-For the sake of clarity let us define the terms - sequential, parallel and
-concurrent, used in this article.
-
-**sequential**, sequential version of algorithm that uses single core, even
-if more than one core is available.
-
-**parallel**, sequential version of algorithm used to solve more than one
-puzzle simultaneously. Although each puzzle will utilize single core, more
-number of puzzles can be solved simultaneously thus utilizing all
-available cores.
-
-**concurrent**, concurrent version of algorithm where each puzzle utilizes
-all available cores.
+**Concurrent** version of this algorithm, will spawn an erlang process for
+each possible path, that is, for a given empty slot if there can be 2 possible
+values, then two erlang process will be spawned and each one will assume one
+of the possible values. With this algorithm, even to solve a single puzzle,
+we can utilize all the available cores.
 
 We will run the same script with few more switches, and SMP disabled.
 
@@ -90,8 +78,8 @@ populating 40% of the slots. Same seed value will generate same set of tables.
 The script outputs five columns,
 
 * `1st column`, no.of puzzles solved.
-* `2nd column` time taken to solve sequentially.
-* `3rd column` time taken to solve puzzles simultaneously, one erlang-process
+* `2nd column` time taken to solve them sequentially.
+* `3rd column` time taken to solve puzzles parallely, one erlang-process
   for each puzzle.
 * `4th column` same as 2nd column, except that concurrent version of algorithm
   is used.
@@ -124,32 +112,33 @@ the `+S 4:4` switch and plotted below,
 
 We can easily observe that,
 
-- Whether simple concurrency or concurrent-backtracking version, there is
-  virtually no overhead introduced because of concurrent execution.
-- Both simple concurrency and concurrent-backtracking version can linearly
-  scale with number of cores.
+- Whether parallel version or concurrent version, there is virtually no
+  overhead introduced when utilizing multiple cores.
+- Both parallel version and concurrent version can linearly scale with
+  number of cores.
 
-When performance of parallel execution is plotted on single-core, 2-core, and
-4-core variants,
+Parallel version is plotted on single-core, 2-core, and 4-core variants,
 
 ![par](media/sudokucharts/par.png)
 
-We can observe that simple concurrency scales linearly with number of cores.
+We can observe that parallel version scales linearly with number of cores.
 
-When performance of concurrent algorithm, executed one after another in
-sequential mode, is plotted on single-core, 2-core, and 4-core variants,
+Concurrent version, when executed one after another using the same erlang
+process, is plotted on single-core, 2-core, and 4-core variants,
 
 ![conc](media/sudokucharts/conc.png)
 
 Shows that there is no improvement of using a concurrent version of the
 algorithm and neither a overhead of using it.
 
-Let us now apply simple concurrency and concurrent backtracking algorithm for
-a pathological sudoku combination and measure its performance on different
-core-counts.
-
 Performance for pathological cases ?
 ------------------------------------
+
+Let us apply sequential version and concurrent version of the algorithm for
+a pathological sudoku combination and measure its performance on different
+core-counts. A puzzle can be [pathological][sudoku-pathological] when it
+leads the algorithm to backrack millions or billions of time before it end
+up on the right path.
 
 I have added two puzzle files priv/long3.term and long4.term, both having a
 pathological case.

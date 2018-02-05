@@ -15,6 +15,10 @@ h1 {
   color: crimson;
 }
 
+//div.home > p:nth-child(2) a, div.home > p:nth-child(5) a {
+//  @include relative-font-size(1.3);
+//}
+
 .post-link {
   display: block;
   @include relative-font-size(1.3);
@@ -91,4 +95,18 @@ div.footer-col-3 span {
   font-weight: bold;
   text-shadow: 3px 2px #8B008B;
   color: #7FFF00;
+}
+
+.blinkcursor {
+  animation-name: flashcursor;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-play-state: running;
+}
+@keyframes flashcursor {
+  0%  {color: black;}
+  80%  {color: black;}
+  100%  {color: white;}
 }
