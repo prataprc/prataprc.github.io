@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Blog with pagd and github"
+title: "Pagd: Blog with pagd and github"
 permalink: blog-with-pagd.html
 ---
 

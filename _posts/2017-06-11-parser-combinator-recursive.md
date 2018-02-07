@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Parser composition for recursive grammar"
+title: "Goparsec: For recursive grammar"
 permalink: parser-combinator-recursive.html
 ---
 

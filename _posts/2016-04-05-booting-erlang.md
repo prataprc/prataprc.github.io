@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Overhead of booting Erlang VM"
+title: "Erlang: Overhead of booting Erlang VM"
 permalink: booting-erlang.html
 ---
 

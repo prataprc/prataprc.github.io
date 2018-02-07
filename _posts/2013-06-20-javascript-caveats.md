@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Caveats in Javascript"
+title: "JS: Caveats in Javascript"
 permalink: javascript-caveats.html
 ---
 

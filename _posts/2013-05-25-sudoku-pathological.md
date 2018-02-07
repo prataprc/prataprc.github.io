@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Sudoku, backtracking and pathological situation"
+title: "Erlang: Sudoku, backtracking and pathological situation"
 permalink: sudoku-pathological.html
 ---
 

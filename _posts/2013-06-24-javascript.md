@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Javascript in a nutshell"
+title: "JS: Javascript in a nutshell"
 permalink: javascript.html
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to setup dual monitors for Ubuntu"
+title: "Dev: Setup dual monitors for Ubuntu"
 permalink: dual-monitor.html
 ---
 

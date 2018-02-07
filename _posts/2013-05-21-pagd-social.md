@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Social interfaces within pagd"
+title: "Pagd: Social interfaces within pagd"
 permalink: pagd-social.html
 ---
 

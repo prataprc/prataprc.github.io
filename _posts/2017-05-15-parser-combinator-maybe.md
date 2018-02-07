@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Parser combinator and maybe rule"
+title: "Goparsec: Maybe combinator"
 permalink: parser-combinator-maybe.html
 ---
 

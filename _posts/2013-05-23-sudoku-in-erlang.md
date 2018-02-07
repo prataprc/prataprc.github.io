@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Sudoku, Erlang and concurrency"
+title: "Erlang: Concurrency with Sudoku"
 permalink: sudoku-in-erlang.html
 ---
 

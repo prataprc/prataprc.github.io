@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Prototype inheritance in Javascript"
+title: "JS: Prototype inheritance in Javascript"
 permalink: javascript-prototype.html
 ---
 

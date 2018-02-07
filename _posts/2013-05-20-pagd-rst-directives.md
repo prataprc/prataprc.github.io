@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Pagd custom directives"
+title: "Pagd: Custom directives"
 permalink: pagd-rst-directives.html
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Integrate pagd with git / hg"
+title: "Pagd: Integrate pagd with git / hg"
 permalink: pagd-repository-integration.html
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Customizing blog using pagd"
+title: "Pagd: Customizing blog using pagd"
 permalink: pagd-customizing.html
 ---
 

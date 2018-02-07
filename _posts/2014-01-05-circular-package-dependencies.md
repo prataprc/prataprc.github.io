@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Circular package dependencies in python"
+title: "Python: Circular package dependencies"
 permalink: circular-package-dependencies.html
 ---
 

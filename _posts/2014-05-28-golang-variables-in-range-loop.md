@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Golang - variables in range loop"
+title: "Golang: Variables in range loop"
 permalink: golang-variables-in-range-loop.html
 ---
 
