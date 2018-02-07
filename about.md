@@ -11,7 +11,7 @@ it is the reverse of ©. Having said that there might be some copyright-ed
 content, that may have found its way into these pages, which is not
 intentional and if you find that infringing please let me know.
 
-prataprc (at) gmail.com
+prataprc (at) gmail (dot) com
 
 You can also ping me by clicking the bottom right corner of any page in this
 site. If online we can have a live chat !!
