@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Distributed DAG of events"
-permalink: distributed-dag-of-events.html
+title: "Federated network for events"
+permalink: federated-network-for-events.html
 ---
 
 Following is the list of invariants that needs to be met when
-building a distributed eventing system.
+building a federated and distributed eventing system.
 
 * One or more nodes can participate in the network.
 * Each node shall store the full set of events generated in the network
@@ -23,8 +23,15 @@ building a distributed eventing system.
   events, that are generated locally, to remaining nodes.
 * Each node will start with the same root event `R`.
 * When a node generate new event its parent is the latest
-  event in the DAG. Example: R -> Ax, where Ax is event `A` generated
+  event in the DAG. Example: `R -> Ax`, where Ax is event `A` generated
   in node `X` whose parent is root event `R`.
+* With only one node in the network, its DAG will look like:
+
+      R -> Ax -> Bx -> Cx -> Dx
+
+  Where events A, B, C, D are generated, is the same time order, on the
+  only node X in the network.
+
 * When the current DAG of events, in a given node X, have multiple leaf
   events, then the newly generated event will consider all leaf events
   at the tip of the DAG as its parents. In short, an event can have
@@ -36,7 +43,8 @@ building a distributed eventing system.
            *---> Cy ---*
 
   Newly generated event `D` in node `X` will consider both leaf events
-  `Bx` and `Cy` as its parent.
+  `Bx` and `Cy` as its parent. Note that `Cy` was the event `C` generate
+  in node `Y` and got replicated to this node.
 * Nodes can in this manner independently generate events and replicate
   them asynchronously across remaining nodes in the network.
 * At any point, if we stop the world and finish replicating remaining
@@ -48,4 +56,4 @@ adequate reasoning and proper explanation about trade-offs.
 
 Question is, what is the flow chart for this state machine ?
 
-Version no : 3
+Version no : 4
