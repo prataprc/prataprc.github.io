@@ -18,9 +18,17 @@ building a federated and distributed eventing system.
   nodes.
 * Events are stored as Directed Acyclic Graph (DAG), and each node is
   a state machine holding on to this DAG.
-* Each node can independently create new events.
-* Every node in the network shall asynchronously replicate
-  events, that are generated locally, to remaining nodes.
+* Each node can independently create new events. Every event shall be
+  self contained and describe itself in JSON like:
+  ```json
+  {"uuid": "<universally unique id>",
+   "parents": ["<parent1-uuid>", "<parent2-uuid>", "<parent3-uuid>" ],
+  }
+  ```
+  Along with `uuid` and `parent` property an event can be described with
+  any number of additional properties.
+* Every node in the network shall asynchronously replicate events,
+  that are generated locally, to remaining nodes.
 * Each node will start with the same root event `R`.
 * When a node generate new event its parent is the latest
   event in the DAG. Example: `R -> Ax`, where Ax is event `A` generated
@@ -56,4 +64,4 @@ adequate reasoning and proper explanation about trade-offs.
 
 Question is, what is the flow chart for this state machine ?
 
-Version no : 4
+Version no : 5
