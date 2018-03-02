@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Federated network for events"
-permalink: federated-network-for-events.html
+title: "Federated DAG of events"
+permalink: federated-dag-of-events.html
 ---
 
 Following is the list of invariants that needs to be met when
