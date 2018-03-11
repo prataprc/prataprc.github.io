@@ -6,10 +6,10 @@ permalink: msgpack-vs-cbor.html
 
 JSON is by far the most popular serialization format used by programmers due
 to its immense popularity in web. It is self describing, because it is encoded
-in human readable text, and supports a set data types that are supported by
+in human readable text, and support a set data types that are available in
 most of the languages. Nevertheless, there are few shortcomings as well.
 
-* In-efficient over the wire due to bloated foot-print.
+* Inefficient over the wire due to bloated foot-print.
 * Can be CPU hungry, because it is not friendly with machine format.
 * No support for formal grammar definition, hence interface contracts are hard
   to communicate and enforce.
