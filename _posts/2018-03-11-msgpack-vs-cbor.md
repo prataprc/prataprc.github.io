@@ -6,7 +6,7 @@ permalink: msgpack-vs-cbor.html
 
 JSON is by far the most popular serialization format used by programmers due
 to its immense popularity in web. It is self describing, because it is encoded
-in human readable text, and support a set data types that are available in
+in human readable text, and support a set of data types that are available in
 most of the languages. Nevertheless, there are few shortcomings as well.
 
 * Inefficient over the wire due to bloated foot-print.
@@ -15,10 +15,10 @@ most of the languages. Nevertheless, there are few shortcomings as well.
   to communicate and enforce.
 
 I am going to pick two alternative for JSON, [Msgpack](https://msgpack.org/)
-and [CBOR](http://cbor.io/) and compare them with each other. I am also of
-the opinion that both these format can do better in terms of CPU and Memory
-footprint compared to JSON serialization. Hence, will be focusing on how
-they are going to compare with each other.
+and [CBOR](http://cbor.io/). I am also of the opinion that both these format
+can do better in terms of CPU and Memory footprint compared to JSON
+serialization. Hence, will be focusing on how they are going to compare with
+each other.
 
 **Support of data types**
 
