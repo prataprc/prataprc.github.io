@@ -7,18 +7,18 @@ permalink: federated-dag-of-events.html
 Following is the list of invariants that needs to be met when
 building a federated and distributed eventing system.
 
-* One or more nodes can participate in the network.
-* Each node shall store the full set of events generated in the network
+* One or more machines can participate in the network.
+* Each machine shall store the full set of events generated in the network
   from `beginning` to `end`, where beginning is the time when the first
-  node got activated in the network.
-* More nodes can join the network at any point in time as long as
+  machine got activated in the network.
+* More machines can join the network at any point in time as long as
   it happens after `beginning`.
-* There are no upper limits on the number of nodes that can join
+* There are no upper limits on the number of machines that can join
   the network, it practice it shall scale up as high as one million
-  nodes.
-* Events are stored as Directed Acyclic Graph (DAG), and each node is
+  machines.
+* Events are stored as Directed Acyclic Graph (DAG), and each machine is
   a state machine holding on to this DAG.
-* Each node can independently create new events. Every event shall be
+* Each machine can independently create new events. Every event shall be
   self contained and describe itself in JSON like:
   ```json
   {"uuid": "<universally unique id>",
@@ -27,20 +27,20 @@ building a federated and distributed eventing system.
   ```
   Along with `uuid` and `parent` property an event can be described with
   any number of additional properties.
-* Every node in the network shall asynchronously replicate events,
-  that are generated locally, to remaining nodes.
-* Each node will start with the same root event `R`.
-* When a node generate new event its parent is the latest
-  event in the DAG. Example: `R -> Ax`, where Ax is event `A` generated
-  in node `X` whose parent is root event `R`.
-* With only one node in the network, its DAG will look like:
+* Every machine in the network shall asynchronously replicate events,
+  that are generated locally, to remaining machine.
+* Each machine will start with the same root event `R`.
+* When a machine generate new event its parent is the latest
+  event in the DAG that it holds. Example: `R -> Ax`, where Ax is event
+  `A` generated in machine `X` whose parent is root event `R`.
+* With only one machine in the network, its DAG will look like:
 
       R -> Ax -> Bx -> Cx -> Dx
 
-  Where events A, B, C, D are generated, is the same time order, on the
-  only node X in the network.
+  Where events A, B, C, D are generated, in the same time order, on the
+  only machine X in the network.
 
-* When the current DAG of events, in a given node X, have multiple leaf
+* When the current DAG of events, in a given machine X, have multiple leaf
   events, then the newly generated event will consider all leaf events
   at the tip of the DAG as its parents. In short, an event can have
   multiple parents. Example:
@@ -50,18 +50,18 @@ building a federated and distributed eventing system.
            |           |
            *---> Cy ---*
 
-  Newly generated event `D` in node `X` will consider both leaf events
+  Newly generated event `D` in machine `X` will consider both leaf events
   `Bx` and `Cy` as its parent. Note that `Cy` was the event `C` generate
-  in node `Y` and got replicated to this node.
+  in machine `Y` and got replicated to this machine.
 * Nodes can in this manner independently generate events and replicate
-  them asynchronously across remaining nodes in the network.
+  them asynchronously across remaining machines in the network.
 * At any point, if we stop the world and finish replicating remaining
-  events from every node, each node shall end up with a DAG graph G'
-  that is exactly identical across every participating node in the network.
+  events from every machine, each machine shall end up with a DAG graph G'
+  that is exactly identical across every participating machine in the network.
 
 Above is a strict set of invariants that can be relaxed or modified with
 adequate reasoning and proper explanation about trade-offs.
 
 Question is, what is the flow chart for this state machine ?
 
-Version no : 5
+Version no : 6
