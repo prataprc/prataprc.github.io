@@ -43,3 +43,10 @@ Additionally there are certain European languages that uses Latin characters
 for script and do have a sort order, but the sort order differs from one
 context to another, for instance whether it is an index of "phone-book" or
 "dictionary".
+
+**Reference:**
+
+* [ICU project collation design](http://site.icu-project.org/design/collation/v2)
+* [Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Collator)
+* [Userguid for ICU project collation architecture](http://userguide.icu-project.org/collation/architecture)
+* [Collation from database perspective](https://www.ibm.com/support/knowledgecenter/en/SSGU8G_11.50.0/com.ibm.glsug.doc/ids_gug_026.htm)
