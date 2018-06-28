@@ -9,7 +9,8 @@ the monitor. That, when jacked into a computing machine, transforms any
 ordinary human-being into a console-jockey. Let us ride on ..
 
 This post is organized in five parts namely, the terminal, shell, programming
-languages, version control and handy bunch of tools.
+languages, version control and handy bunch of tools. Most of these tools are
+[configurable][configurable].
 
 Desktop
 -------
@@ -88,7 +89,7 @@ for text editing and text manipulations.
 ```bash
 sudo apt-get install exuberant-ctags vim vim-scripts vim-python-jedi
 sudo apt-get install vim-syntax-docker vim-syntax-go vim-vimerl
-sudo apt-get install vim-vimerl-syntax vim-athena
+sudo apt-get install vim-vimerl-syntax vim-athena vim-gtk vim-gnome
 ```
 
 [vim][vim-link] comes with a built in scripting language. But bindings are
@@ -110,7 +111,7 @@ the clipboard register is possible by adding the following line in your
 `.vimrc` file,
 
 ```bash
-set clipboard^=unnamed
+set clipboard=unnamed
 ```
 
 Allowing you to simply use y and p.
@@ -234,7 +235,7 @@ though it is not as sophisticated as JVM it does a decent job.
 interpreted as ruby program, can be written in declarative style.
 
 ```bash
-sudo apt-get install ruby
+sudo apt-get install ruby ruby-dev
 ```
 
 **go**,
@@ -269,6 +270,21 @@ sudo apt-get install protobuf-compier # to install protobuf
 ```
 
 Mercurial must be installed for `go get` command to work.
+
+**rust**
+
+Rust is probably the most ambitious systems language in past two decades.
+Has a fine balance between performance, abstraction, and code stability. Check
+out [rust installation page][https://www.rust-lang.org/en-US/install.html]
+on installing the rust compiler, toolchain and standard library.
+
+Rust toolchain involves:
+
+* rustup, to manage multiple versions of rust toolchains.
+* rustc, the rust compiler.
+* cargo, rust package manager.
+* rustfmt, rust formatter
+* rustdoc, documentat generating tool for rust code.
 
 **development tools**,
 
@@ -358,11 +374,13 @@ credentials for different repositories.
 **git**,
 
 Most popular among version control system is [git][git-link], thanks to linux
-and github for doing that.
+and github for doing that. Install a plugin for large file storage from
+github.
 
 ```bash
-sudo apt-get install git
+sudo apt-get install git git-lfs
 ```
+
 
 After installing git, update the user configuration file ~/.gitconfig,
 
@@ -551,6 +569,31 @@ sudo fc-cache
 fc-cache
 ```
 
+**Github, Jekyll for static sites**
+
+Github can also host blog-sites, project-sites, and other microsites, using
+Jekyll static generator platform. To set it up locally on linux before
+publishing it follow up with [this link][local-jekyll].
+
+Handy set of shortcuts
+----------------------
+
+*Gnome-Terminal, tmux, vi shortcuts*
+
+* Shift-Ctrl-c copy to clipboard
+* Shift-Ctrl-v paste from clipboard
+* Shift-P to paste into tmux
+* Shift-mouse-drag to copy
+* Ctrl-a \[ space/v/V y to yank
+* Ctrl-, to open preference
+
+*Browser shortcuts* in linux
+
+* Ctrl-l move address bar
+* Ctrl-f find in page
+* Alt-left-array go to previous page
+* Alt-right-array go to next page
+
 For mac
 -------
 
@@ -597,3 +640,5 @@ selected text. CMD+v works anyway
 [ruby-link]: http://www.ruby-lang.org/en/
 [ncurses-link]: http://www.gnu.org/software/ncurses/
 [hipe-link]: http://www.erlang.org/doc/apps/hipe/
+[configurable]: https://github.com/prataprc/dotfiles
+[local-jekyll]: https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/
