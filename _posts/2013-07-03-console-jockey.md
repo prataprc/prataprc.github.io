@@ -28,6 +28,9 @@ Fonts and konsole
 curl -kL https://raw.github.com/cstrap/monaco-font/master/install-font-ubuntu.sh | bash
 ```
 
+Use `Tweak` and `Settings` to configure startup-applications, fonts, font-size,
+keyboard, network, suspend-on-power-off etc.
+
 
 Terminal
 --------
@@ -510,6 +513,8 @@ sudo apt-get install urlview            # extracting url from text
 sudo apt-get install w3m
 sudo apt-get install rename
 sudo apt-get install ltrace htop atop iostat iotop
+sudo apt-get install qpdfview			# pdf reader
+sudo apt-get install cmake
 ```
 
 More tools and utilities.
@@ -559,6 +564,13 @@ sudo apt-get install myunity
 sudo apt-get install indicator-multiload    # Load indicator applet
 ```
 
+Sometimes default browser is picked from `x-www-browser` or `gnome-www-browser`
+
+```bash
+sudo update-alternatives --install /usr/bin/x-www-browser x-www-browser /snap/bin/chromium 10
+sudo update-alternatives --install /usr/bin/gnome-www-browser gnome-www-browser /snap/bin/chromium 10
+```
+
 Installing fonts for Konsole. I especially like `inconsolata`. After running
 fc-cache start the konsole and configure your desired fonts.
 
@@ -574,6 +586,23 @@ fc-cache
 Github can also host blog-sites, project-sites, and other microsites, using
 Jekyll static generator platform. To set it up locally on linux before
 publishing it follow up with [this link][local-jekyll].
+
+**Useful gnome extension**
+
+* `Clipboard Indicator` by Tudmotu. Clipboard Manager extension for Gnome-Shell.
+  Adds a clipboard indicator to the top panel, and caches clipboard history.
+* `Freon` by UshakovVasilii. Shows CPU temperature, disk temperature, video card
+  temperature (NVIDIA/Catalyst/Bumblebee&NVIDIA), voltage and fan RPM.
+* `GnomeStatsPro` by jbenden. System monitor showing CPU and memory usage.
+* Hide Activities` Button by richardfsr. Hides the Activities button on panel.
+* `Hide App Icon` by mrapp. Hides the icon and/or title of the currently focused
+  application in the top panel of the GNOME shell.
+* `Hide Top Bar` by tuxor1337. Hides the top bar, except in overview. However,
+  there is an option to show the panel whenever the mouse pointer approaches
+  the edge of the screen. And if "intellihide" is enabled, the panel only hides
+  when a window takes the space.
+* `Pixel Saver` by deadalnix. Pixel Saver is designed to save pixel by fusing
+  activity bar and title bar in a natural way
 
 Handy set of shortcuts
 ----------------------
