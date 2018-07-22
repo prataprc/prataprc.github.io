@@ -15,5 +15,11 @@ set of terminal nodes and non-terminal nodes.
 values into a binary format which can then be sorted using **memcmp**
 comparator, there by avoid parsing the JSON value for every comparison.
 
+**[In the beginning was the command line][cmdline]:** An awesome
+write-up by renowned author [Neal Stephenson][nealsteve]. Must read for
+all aspiring programmers.
+
 [astquery]: https://prataprc.github.io/astquery.io/
 [jsonsort]: https://prataprc.github.io/jsonsort.io/
+[cmdline]: http://cristal.inria.fr/~weis/info/commandline.html
+[nealsteve]: http://www.nealstephenson.com/
