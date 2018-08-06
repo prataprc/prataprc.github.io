@@ -69,13 +69,12 @@ div.footer-col-3 span {
 }
 
 
-.chat-on-matrix {
+.chat-on-irc {
   z-index: 100;
   position: fixed;
   bottom: 0;
   right: 10px;
   padding: .25em 1em;
-  background-color: black;
   border: 0;
   border-top-left-radius: .5em;
   border-top-right-radius: .5em;
@@ -88,13 +87,6 @@ div.footer-col-3 span {
   transition: all .3s ease;
   box-sizing: border-box;
   color: #fff;
-}
-
-.chat-on-matrix .line2 {
-  font-size: 8px;
-  font-weight: bold;
-  text-shadow: 3px 2px #8B008B;
-  color: #7FFF00;
 }
 
 .blinkcursor {
