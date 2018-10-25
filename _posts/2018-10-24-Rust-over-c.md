@@ -137,7 +137,7 @@ Bonus features in Rust programming
 * Enumerated type variants.
 * Really hard to end up with segmentation faults.
 * Facilitates concurrent programming without compromising on safety.
-* Module and crates for organizing rust code.
+* Modules and crates for organizing rust code.
 * Attribute system that facilitates build, versioning, packaging,
   distribution and installation.
 * Rust standard library leans on functional paradigm.
