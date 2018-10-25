@@ -9,7 +9,7 @@ Rust is the new systems language which can, in a way, truly challenge
 the dominance of `C` that it enjoys for past 40 years.  Before going
 further let it be made clear that this post is not to undermine the
 simplicity or performance of `C` programming. In fact, if `C` or `C++`
-works for some one, for a given project, then there is no need to
+works for someone, for a given project, then there is no need to
 consider [Rust][rust], for that matter any other language, over `C`.
 
 If I where to pick `C` as the choice of language for a project, it might
@@ -23,7 +23,7 @@ be for one or more of the following reasons:
 * Vibrant ecosystem, due to its simplicity and brevity.
 * Real time systems requiring predictable behavior.
 
-Let us look at them one by one, though not necessarily the same order.
+Let us look at them one by one, though not necessarily in the same order.
 
 Hardware access
 ---------------
