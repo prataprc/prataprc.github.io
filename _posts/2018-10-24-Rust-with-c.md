@@ -5,13 +5,12 @@ permalink: rust-over-c
 date: 2018-10-24
 ---
 
-Rust is the new systems language language which is, in a way, can
-truly challenge the dominance of `C` that it enjoys for past 40 years.
-Before going further let it be made clear that this post is not to
-undermine the simplicity or performance of `C` programming. In fact,
-if `C` or `C++` works for some one, for a given project, then there
-is no need to consider [Rust][rust], for that matter any other language,
-over `C`.
+Rust is the new systems language which can, in a way, truly challenge
+the dominance of `C` that it enjoys for past 40 years.  Before going
+further let it be made clear that this post is not to undermine the
+simplicity or performance of `C` programming. In fact, if `C` or `C++`
+works for some one, for a given project, then there is no need to
+consider [Rust][rust], for that matter any other language, over `C`.
 
 If I where to pick `C` as the choice of language for a project, it might
 be for one or more of the following reasons:
@@ -39,7 +38,7 @@ Rust allows everything that `C` can provide, especially with regards to
 pointers, with just one aspect added to it - safety. Actually it is not
 just a feature, it is a dimension that cut across every other feature
 in the Rust language. Whether it is data or code, safety is strict by
-default, it is really hard to shoot our-self on the foot as long as
+default, it is really hard to shoot ourself on the foot as long as
 we are writing safe code. And for H/W access we can restrict them into
 separate functions and mark them unsafe.
 
@@ -60,8 +59,6 @@ Performance in `C` programs come from:
   * Rust follows zero-cost-abstraction, programmers can enjoy
     the higher level abstractions in rust without worrying about hidden
     cost that might be introduced by compiler.
-* Lean stack model for function calls and local variables.
-  * Rust does not make any compromises in its stack and heap model
 * A well aged compiler and language design.
   * Rust design includes some of the latest advancements in type system
     along with memory safety built into the language. And inspite of
@@ -76,10 +73,10 @@ which has two angle to it. One, programmers can write code without
 worrying about machine instructions, or its design architecture. Second,
 availability of a `C` compiler for pretty much every processor platform.
 
-Rust uses LLVM as its backend for generating them the machine code. And
+Rust uses LLVM as its backend for generating the machine code. And
 LLVM can already compile to several processor platforms and has a vibrant
 community. And when compare to `C`, Rust is far more agnostic to the
-processor or its target platform. As a added bonus, while Unix is the
+processor or its target platform. As added bonus, while Unix is the
 favorite OS for `C` programmers (at least historically speaking), such OS
 specific nuances does not stick into Rust programming.
 
@@ -90,22 +87,27 @@ Good amount of programs are written, document and distributed as libraries.
 Inter-operability means, such libraries can be exported to other languages
 through its FFI (Foreign Function Interface). And `C` is the first, and most
 likely the only, language that most of the languages support in its FFI.
+Personally, this ended up as the decided factor to pick Rust. After writing
+couple of algorithms with Golang, I found it disappointing that I cannot make
+them available for programmers in other languages. AFAIK C, C++ and Rust are
+the only that can be counted for inter-operability.
 
 Rust, by using `C` representation for its data format (using `repr` attribute)
-and functions can be linked with other languages as easily as `C`.
+and function-call-stack can be linked with other languages similar to a `C`
+program.
 
 Simple design
 -------------
 
-Often sited advantage of `C` is its simplicity for programming. For some one
+Often sited advantage of `C` is its simplicity for programming. For someone
 whose is already comfortable with micro-processors and computer architecture
 `C` is easy to learn.
 
-Rust type system, functional paradigms of programming, it memory safety and
+Rust type system, functional paradigms of programming, its memory safety and
 lifetimes are new ideas for most of the programmers. Yes there is a bit of
 learning curve before getting productive with Rust, but most of the higher
 level abstractions, except trait-objects, are built on top of `C` like simple
-design. The entire Rust reference-manual is around 100-150 pages long.
+design. The entire Rust reference-manual can be contained in 100-150 pages.
 
 Predictable runtime
 -------------------
