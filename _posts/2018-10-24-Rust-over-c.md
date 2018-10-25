@@ -75,7 +75,7 @@ availability of a `C` compiler for pretty much every processor platform.
 
 Rust uses LLVM as its backend for generating the machine code. And
 LLVM can already compile to several processor platforms and has a vibrant
-community. And when compare to `C`, Rust is far more agnostic to the
+community. And when compared to `C`, Rust is far more agnostic to the
 processor or its target platform. As added bonus, while Unix is the
 favorite OS for `C` programmers (at least historically speaking), such OS
 specific nuances does not stick into Rust programming.
