@@ -122,7 +122,7 @@ critical.  Root cause of unpredictable latency primarily hinges on:
 * Pass by reference.
 * Pointer indirection due to virtual-tables and other abstractions.
 
-In Rust, but has strong ownership model to avoid Garbage collection. Rust
+Rust has strong ownership model to avoid Garbage collection. Rust
 don't have green-threads and hence there is no scheduler compiled into
 rust programs. Even if green-threads are supported in future versions of
 Rust, it is most likely an opt-in feature. Rust uses Mono-morphisation
