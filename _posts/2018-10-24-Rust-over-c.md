@@ -90,7 +90,7 @@ likely the only, language that most of the languages support in its FFI.
 Personally, this ended up as the decided factor to pick Rust. After writing
 couple of algorithms with Golang, I found it disappointing that I cannot make
 them available for programmers in other languages. AFAIK C, C++ and Rust are
-the only that can be counted for inter-operability.
+the only ones that can be counted for inter-operability.
 
 Rust, by using `C` representation for its data format (using `repr` attribute)
 and function-call-stack can be linked with other languages similar to a `C`
