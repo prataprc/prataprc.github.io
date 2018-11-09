@@ -100,7 +100,7 @@ Simple design
 -------------
 
 Often sited advantage of `C` is its simplicity for programming. For someone
-whose is already comfortable with micro-processors and computer architecture
+who is already comfortable with micro-processors and computer architecture,
 `C` is easy to learn.
 
 Rust type system, functional paradigms of programming, its memory safety and
@@ -118,9 +118,10 @@ be used in real-time systems, where latency and response times are
 critical.  Root cause of unpredictable latency primarily hinges on:
 
 * Garbage collection.
-* Runtime Scheduler for green-threads compiled into the application.
 * Pass by reference.
-* Pointer indirection due to virtual-tables and other abstractions.
+* Pointer indirection due to virtual-tables and other language level
+  abstractions.
+* Runtime Scheduler for green-threads compiled into the application.
 
 Rust has strong ownership model to avoid Garbage collection. Rust
 don't have green-threads and hence there is no scheduler compiled into
@@ -141,6 +142,11 @@ Bonus features in Rust programming
 * Attribute system that facilitates build, versioning, packaging,
   distribution and installation.
 * Rust standard library leans on functional paradigm.
+
+Table of comparision
+--------------------
+
+![Rust Vs C](rust-over-c/rustvsc.png)
 
 [rust]: https://www.rust-lang.org
 [java]: https://en.wikipedia.org/wiki/Java_(programming_language)
