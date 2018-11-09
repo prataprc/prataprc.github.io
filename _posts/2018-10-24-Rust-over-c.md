@@ -107,7 +107,7 @@ Rust type system, functional paradigms of programming, its memory safety and
 lifetimes are new ideas for most of the programmers. Yes there is a bit of
 learning curve before getting productive with Rust, but most of the higher
 level abstractions, except trait-objects, are built on top of `C` like simple
-design. The entire Rust reference-manual can be contained in 100-150 pages.
+design. The entire Rust reference-manual can be contained in < 100 pages.
 
 Predictable runtime
 -------------------
