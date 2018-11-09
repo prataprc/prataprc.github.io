@@ -146,7 +146,7 @@ Bonus features in Rust programming
 Table of comparision
 --------------------
 
-![Rust Vs C](rust-over-c/rustvsc.png)
+![Rust Vs C](media/rust-over-c/rustvsc.png)
 
 [rust]: https://www.rust-lang.org
 [java]: https://en.wikipedia.org/wiki/Java_(programming_language)
