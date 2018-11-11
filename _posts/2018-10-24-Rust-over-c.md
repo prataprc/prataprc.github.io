@@ -12,7 +12,7 @@ simplicity or performance of `C` programming. In fact, if `C` or `C++`
 works for someone, for a given project, then there is no need to
 consider [Rust][rust], for that matter any other language, over `C`.
 
-If I where to pick `C` as the choice of language for a project, it might
+If I were to pick `C` as the choice of language for a project, it might
 be for one or more of the following reasons:
 
 * Need to directly interact with H/W, like writing boot loader, device
@@ -51,7 +51,7 @@ Performance in `C` programs come from:
   alignments, memory footprint etc.
   * Rust, the amazing type system of rust, when compiled, manages to
     reduce them to `C` like simplicity.
-* No GC.
+* No Garbage Collection (GC).
   * Rust, similar to `C`, does not have a GC by default, but at the same
     time programmers don't have to alloc/free memory. There are no
     dangling pointers and no memory leaks that are common to `C` programs.
