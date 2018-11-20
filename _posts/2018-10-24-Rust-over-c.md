@@ -6,11 +6,11 @@ date: 2018-10-24
 ---
 
 Rust is the new systems language which can, in a way, truly challenge
-the dominance of `C` that it enjoys for past 40 years.  Before going
-further let it be made clear that this post is not to undermine the
-simplicity or performance of `C` programming. In fact, if `C` or `C++`
-works for someone, for a given project, then there is no need to
-consider [Rust][rust], for that matter any other language, over `C`.
+the 40 year dominance of `C`. Before going further let it be made
+clear that this post is not to undermine the simplicity or performance
+of `C` programming. In fact, if `C` or `C++` works for someone,
+for a given project, then there is no need to consider [Rust][rust],
+for that matter any other language, over `C`.
 
 If I were to pick `C` as the choice of language for a project, it might
 be for one or more of the following reasons:
@@ -103,11 +103,11 @@ Often sited advantage of `C` is its simplicity for programming. For someone
 who is already comfortable with micro-processors and computer architecture,
 `C` is easy to learn.
 
-Rust type system, functional paradigms of programming, its memory safety and
-lifetimes are new ideas for most of the programmers. Yes there is a bit of
-learning curve before getting productive with Rust, but most of the higher
-level abstractions, except trait-objects, are built on top of `C` like simple
-design. The entire Rust reference-manual can be contained in < 100 pages.
+Rust type system, functional paradigms in programming, its memory safety and
+lifetimes, macro-system are new ideas for many programmers. Yes there
+is a bit of learning curve before getting productive with Rust, but most of
+the higher level abstractions, except trait-objects, are built on top of `C`
+like simple design. The entire Rust reference-manual is around 100 pages.
 
 Predictable runtime
 -------------------
