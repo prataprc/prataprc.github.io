@@ -60,7 +60,7 @@ Performance in `C` programs come from:
     the higher level abstractions in rust without worrying about hidden
     cost that might be introduced by compiler.
 * A well aged compiler and language design.
-  * Rust design includes some of the latest advancements in type system
+  * Rust design include some of the latest, but mature, type system
     along with memory safety built into the language. And inspite of
     being a very young language its performance is comparable to `C++`,
     if not with `C`.
