@@ -148,6 +148,8 @@ Table of comparision
 
 ![Rust Vs C](media/rust-over-c/rustvsc.png)
 
+* <sub style="color: gray;"> C Macros are pre-processor directives for text substitution </sub>
+
 [rust]: https://www.rust-lang.org
 [java]: https://en.wikipedia.org/wiki/Java_(programming_language)
 [python]: https://en.wikipedia.org/wiki/Python_(programming_language)
