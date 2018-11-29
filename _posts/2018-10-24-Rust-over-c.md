@@ -99,7 +99,7 @@ inter-operability.
 Simple design
 -------------
 
-Often sited advantage of `C` is its simplicity for programming. For someone
+Often cited advantage of `C` is its simplicity for programming. For someone
 who is already comfortable with micro-processors and computer architecture,
 `C` is easy to learn.
 
@@ -112,7 +112,7 @@ like simple design. The entire Rust reference-manual is around 100 pages.
 Predictable runtime
 -------------------
 
-Often sited disadvantage of higher level languages like Haskell, Java,
+Often cited disadvantage of higher level languages like Haskell, Java,
 Python etc. is that, their runtime execution is unpredictable and cannot
 be used in real-time systems, where latency and response times are
 critical.  Root cause of unpredictable latency primarily hinges on:
@@ -124,7 +124,7 @@ critical.  Root cause of unpredictable latency primarily hinges on:
 * Runtime Scheduler for green-threads compiled into the application.
 
 Rust has strong ownership model to avoid Garbage collection. Rust
-don't have green-threads and hence there is no scheduler compiled into
+doesn't have green-threads and hence there is no scheduler compiled into
 rust programs. Even if green-threads are supported in future versions of
 Rust, it is most likely an opt-in feature. Rust uses Mono-morphisation
 technique to avoid pass by reference, except in case of trait objects.
