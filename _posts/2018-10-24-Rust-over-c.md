@@ -135,6 +135,7 @@ Bonus features in Rust programming
 ----------------------------------
 
 * Amazing type system - data and behavior are cleanly separated.
+* Parametric types, a.k.a [Generics][generic].
 * Enumerated type variants.
 * Really hard to end up with segmentation faults.
 * Facilitates concurrent programming without compromising on safety.
@@ -157,4 +158,4 @@ Table of comparision
 [haskell]: https://en.wikipedia.org/wiki/Haskell_(programming_language)
 [ruby]: https://en.wikipedia.org/wiki/Ruby_(programming_language)
 [golang]: https://en.wikipedia.org/wiki/Go_(programming_language)
-
+[generic]: https://en.wikipedia.org/wiki/Generic_programming
