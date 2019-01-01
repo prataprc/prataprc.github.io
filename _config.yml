@@ -1,7 +1,7 @@
 title: ~/prataprc
 #author: prataprc
 description: > # this means to ignore newlines until "baseurl:"
-  Thoughts. Ideas. Code.
+  Thoughts · Ideas · Code
 timezone: Asia/Colombo
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
