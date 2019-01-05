@@ -1,7 +1,9 @@
 ---
 layout: post
 title:  "Rust over C"
-permalink: rust-over-c
+permalink: rust-over-c.html
+redirect_from:
+    - /rust-over-c
 date: 2018-10-24
 ---
 

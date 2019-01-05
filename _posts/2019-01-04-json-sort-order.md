@@ -1,7 +1,9 @@
 ---
 layout: post
 title:  "Sort order for JSON"
-permalink: json-sort-order
+permalink: json-sort-order.html
+redirect_from:
+    - /json-sort-order
 date: 2019-01-04
 ---
 
