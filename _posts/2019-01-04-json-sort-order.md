@@ -40,10 +40,12 @@ numbers can be treated uniformly such that when comparing an integer
 value and floating point value, later value is converted to
 integer and compared.
 
-Also, JSON specification do not define _-Infinity_,
+Also there is the [total ordering][totalorder] issue for floating
+point numbers, and JSON specification do not define _-Infinity_,
 _+Infinity_ and _NaN_ values that are part of the floating point
 specification. These tokens are defined in the [JSON5][json5]
-specification. And its sort order shall be defined as
+specification. And its sort order shall be defined, for the
+sake of total ordering, as
 
 * **-Infinity** shall sort before all numbers.
 * **+Infinity** shall sort after all numbers.
@@ -111,3 +113,4 @@ This can be added in future specification.
 
 [json]: https://tools.ietf.org/html/rfc8259
 [json5]: http://json5.org
+[totalorder]: https://en.wikipedia.org/wiki/Total_order
