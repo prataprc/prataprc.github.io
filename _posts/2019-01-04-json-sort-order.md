@@ -38,7 +38,11 @@ numbers. Although it encourages programmers to stick within
 For the purpose of numerical-sorting, integers and floating point
 numbers can be treated uniformly such that when comparing an integer
 value and floating point value, later value is converted to
-integer and compared.
+integer and compared. This means for 64-bit floating point,
+
+* Values that are <= -2^127 will sort before all i128 integers.
+* Values that are >= 2^127-1 will sort after all i128 integers.
+* NaN, Not a Number values shall sort after all i128 integers.
 
 Also there is the [total ordering][totalorder] issue for floating
 point numbers, and JSON specification do not define _-Infinity_,
