@@ -14,6 +14,9 @@ This post discuss in detail the sort order for JSON data types. Specifically,
 * Define sort order for different JSON types.
 * Define sort order for values of each given types.
 
+A reference implementation of this proposal is provided by the [Rust][rust]
+library [jsondata][jsondata].
+
 Sort order for types
 ====================
 
@@ -118,3 +121,5 @@ This can be added in future specification.
 [json]: https://tools.ietf.org/html/rfc8259
 [json5]: http://json5.org
 [totalorder]: https://en.wikipedia.org/wiki/Total_order
+[rust]: https://www.rust-lang.org/
+[jsondata]: https://github.com/bnclabs/jsondata
