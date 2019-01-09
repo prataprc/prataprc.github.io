@@ -3,7 +3,7 @@ layout: post
 title:  "Rust Onboarding"
 permalink: rust-onboarding.html
 published: false
-date: 2019-01-08
+date: 2019-01-07
 ---
 
 Often raised complaint with rust is its learning curve. Yes, the
