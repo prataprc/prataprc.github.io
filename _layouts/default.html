@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+	      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	      crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+	      crossorigin="anonymous"></script>
+
+
   {% include head.html %}
 
   <body>
@@ -16,5 +24,7 @@
     {% include footer.html %}
 
   </body>
+
+  {% include json-ops-tabs.html %}
 
 </html>
