@@ -5,11 +5,11 @@ permalink: json-operations.html
 date: 2019-01-09
 ---
 
-This writeup aims to define common arithmetic, bitwise, logical
+This write up aims to define common arithmetic, bit-wise, logical
 and compare operations that can be applied on JSON values. Note
 that JSON values can be of mixed types, in other words, operands in
 a binary operation not necessarily belong to same JSON type - so as
-to implement computational operations for schemaless documents.
+to implement computational operations for schema-less documents.
 
 A reference implementation of this proposal is provided by the
 [Rust][rust] library [jsondata][jsondata].
@@ -50,7 +50,7 @@ Arithmetic operation
   Float    | Float     | Float    | floating point addition
   Integer  | Float     | Float    | integer shall be converted to float
   Float    | Integer   | Float    | integer shall be converted to float
-  String   | String    | String   | string concatination <br> ``"hello" + "world" = "helloworld"``
+  String   | String    | String   | string concatenation <br> ``"hello" + "world" = "helloworld"``
   Array    | Array     | Array    | ``[1,2] + [2,1] = [1,2,2,1]``
   Object   | Object    | Object   | ``{"a": 10, "b": 11} + {"b": 20} = {"a":10, "b":20}``
 
@@ -58,8 +58,8 @@ Arithmetic operation
 -----------|-----------|---------|-------------------
   Null     | (any)     | (any)   | identity operation
   (any)    | Null      | (any)   | identity operation
-  Integer  | Integer   | Integer | integral subraction
-  Float    | Float     | Float   | floating point subraction
+  Integer  | Integer   | Integer | integral subtraction
+  Float    | Float     | Float   | floating point subtraction
   Integer  | Float     | Float   | integer shall be converted to float
   Float    | Integer   | Float   | integer shall be converted to float
   Array    | Array     | Array   | ``[1,1,2,2,2] - [2,2,1] = [1,2]``
@@ -128,27 +128,27 @@ Bitwise operations
 
   lhs      | rhs       | result   | description
 -----------|-----------|----------|-------------------
-  Integer  | Integer   | Integer  | Bitwise left shift, silent overflow. For all rhs, where <br> ``(2^(rhs+1)) >= max(int)`` <br> result shall be ZERO
+  Integer  | Integer   | Integer  | Bit-wise left shift, silent overflow. For all rhs, where <br> ``(2^(rhs+1)) >= max(int)`` <br> result shall be ZERO
 
 
   lhs      | rhs       | result   | description
 -----------|-----------|----------|-------------------
-  Integer  | Integer   | Integer  | Bitwise right shift, sign bit moves right. For all rhs, where <br> ``(2^(rhs+1)) >= max(int)`` <br> result shall be ZERO, for positive integer <br> result shall be -1, for negative integer
+  Integer  | Integer   | Integer  | Bit-wise right shift, sign bit moves right. For all rhs, where <br> ``(2^(rhs+1)) >= max(int)`` <br> result shall be ZERO, for positive integer <br> result shall be -1, for negative integer
 
 
   lhs      | rhs       | result   | description
 -----------|-----------|----------|-------------------
-  Integer  | Integer   | Integer  | Bitwise AND operation between two signed integers
+  Integer  | Integer   | Integer  | Bit-wise AND operation between two signed integers
 
 
   lhs      | rhs       | result   | description
 -----------|-----------|----------|-------------------
-  Integer  | Integer   | Integer  | Bitwise OR operation between two signed integers
+  Integer  | Integer   | Integer  | Bit-wise OR operation between two signed integers
 
 
   lhs      | rhs       | result   | description
 -----------|-----------|----------|-------------------
-  Integer  | Integer   | Integer  | Bitwise XOR operation between two signed integers
+  Integer  | Integer   | Integer  | Bit-wise XOR operation between two signed integers
 
 <br>
 
@@ -178,7 +178,7 @@ be treated as either ``true`` or ``false``.
 * **Non empty object** shall be treated as true.
 
 With types and values reduced to either true or false, results of a
-logical operator simply follows the boolean truth table.
+logical operator simply follows the Boolean truth table.
 
 <div id="tab-logical">
   <ul>
@@ -254,8 +254,8 @@ The gist of rules for compare operation:
 * Boolean type shall sort after Null type.
   * Boolean false value sort before true value.
 * Number type shall sort after Boolean type.
-  * f64 values that are <= -2^127 will sort before all i128 integers.
-  * f64 values that are >= 2^127-1 will sort after all i128 integers.
+  * F64 values that are <= -2^127 will sort before all i128 integers.
+  * F64 values that are >= 2^127-1 will sort after all i128 integers.
   * NaN, Not a Number, value shall sort after all i128 integers
   * -Infinity shall sort before all numbers.
   * +Infinity shall sort after all numbers.
