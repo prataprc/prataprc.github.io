@@ -19,6 +19,7 @@ List of operations that we are going to study here:
 * **Arithmetic** operations, ADD, SUB, MUL, DIV, REM, NEG.
 * **Bitwise** operations, SHL, SHR, BITAND, BITOR, BITXOR.
 * **Logical** operations, NOT, AND, OR.
+* **Compare** operations EQ, NE, LT, LE, GT, GE.
 * **Index** operations.
 * **Range** operations.
 
@@ -73,7 +74,8 @@ Arithmetic operation
   Float    | Float     | Float   | floating point multiplication
   Integer  | Float     | Float   | integer shall be converted to float
   Float    | Integer   | Float   | integer shall be converted to float
-  String   | Integer   | String  | ``"ok" * 3 = "okokok"``
+  String   | Integer   | String  | ``"ok" * 3 = "okokok"`` and ``"ok" * 0 = ""`` 
+  Integer  | String    | String  | ``3 * "ok" = "okokok"``
 
   lhs      | rhs       | result  | description
 -----------|-----------|---------|------------
@@ -105,8 +107,6 @@ Arithmetic operation
 * Silent overflow shall occur with all integral arithmetic operations.
 * Arithmetic operations of all other combinations, that are not listed
   above, shall lead to error.
-
-<br>
 
 Bitwise operations
 ==================
@@ -157,13 +157,11 @@ Bitwise operations
 * Bitwise operations of all other combinations, that are not listed
   above, shall lead to error.
 
-<br>
-
 Logical operations
 ==================
 
 For the purpose of logical operations, following JSON types/values shall
-be treated as either ``true`` or ``false``.
+be coerced to ``true`` or ``false``.
 
 * **Null** shall be treated as false.
 * **Boolean true** shall be treated as true.
@@ -212,6 +210,32 @@ logical operator simply follows the Boolean truth table.
 
 <br>
 
+Compare operation
+=================
+
+Gist of rules for compare operation:
+
+* Null type shall sort before all other types.
+* Boolean type shall sort after Null type.
+  * Boolean false value sort before true value.
+* Number type shall sort after Boolean type.
+  * F64 values that are <= -2^127 will sort before all i128 integers.
+  * F64 values that are >= 2^127-1 will sort after all i128 integers.
+  * NaN, Not a Number, value shall sort after all i128 integers
+  * -Infinity shall sort before all numbers.
+  * +Infinity shall sort after all numbers.
+  * NaN shall sort after +Infinity
+* String type shall sort after Number type.
+  * String values are compared byte by byte.
+* Array type shall sort after String type.
+* Object type shall sort after Array type.
+  * All (key,value) pairs within the object shall be presorted based on the key.
+  * When comparing two objects, comparison shall start from first key and proceed to the last key.
+  * If two keys are equal at a given position within the objects, then its corresponding values shall be compared.
+  * When one object is a subset of another object, as in, if one object contain all the (key,value) properties that the other object has then it shall sort before the other object.
+
+A more detailed description can be found here: [sort order for json][sort-order]
+
 Index operation
 ===============
 
@@ -244,32 +268,8 @@ example array ``arr = [1, 2, true, null, 3.4, [1,2]]``,
 * ``arr[1..3]`` returns ``[2, true]``.
 * ``arr[..3]`` returns ``[1, 2, true]``.
 * ``arr[..]`` returns the entire collection of array.
-
-Compare operation
-=================
-
-The gist of rules for compare operation:
-
-* Null type shall sort before all other types.
-* Boolean type shall sort after Null type.
-  * Boolean false value sort before true value.
-* Number type shall sort after Boolean type.
-  * F64 values that are <= -2^127 will sort before all i128 integers.
-  * F64 values that are >= 2^127-1 will sort after all i128 integers.
-  * NaN, Not a Number, value shall sort after all i128 integers
-  * -Infinity shall sort before all numbers.
-  * +Infinity shall sort after all numbers.
-  * NaN shall sort after +Infinity
-* String type shall sort after Number type.
-  * String values are compared byte by byte.
-* Array type shall sort after String type.
-* Object type shall sort after Array type.
-  * All (key,value) pairs within the object shall be presorted based on the key.
-  * When comparing two objects, comparison shall start from first key and proceed to the last key.
-  * If two keys are equal at a given position within the objects, then its corresponding values shall be compared.
-  * When one object is a subset of another object, as in, if one object contain all the (key,value) properties that the other object has then it shall sort before the other object.
-
-A more detailed description can be found here: [sort order for json][sort-order]
+* ``arr[..=3]`` returns ``[1, 2, true, null]``.
+* ``arr[1..=3]`` returns ``[2, true, null]``.
 
 Package jsondata
 ================
