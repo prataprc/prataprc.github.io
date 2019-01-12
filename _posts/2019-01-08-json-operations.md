@@ -285,6 +285,7 @@ std::ops:
 * _Fn_, version of the call operator that takes an immutable receiver.
 * _FnMut_, version of the call operator that takes a mutable receiver.
 * _FnOnce_, version of the call operator that takes a by-value receiver.
+* _RangeBounds<isize>_, is implemented as a range() method on Json type.
 
 [rust]: https://www.rust-lang.org/
 [jsondata]: https://github.com/bnclabs/jsondata
