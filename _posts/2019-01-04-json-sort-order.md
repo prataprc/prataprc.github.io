@@ -64,7 +64,10 @@ In some languages the order of character glyph don't have a
 similar ordering when converted to their Unicode code points.
 Also, UTF8-encoding introduces other complexities. For simplicity
 sake we can do binary comparison of string values, after the
-escape-encoding is removed.
+escape-encoding is removed. There are some notable collation standards -
+[Unicode collation](http://unicode.org/reports/tr10) and
+[ICU collation](http://userguide.icu-project.org/collation), that are
+already available for string collation.
 
 Sort order for array values
 ===========================
