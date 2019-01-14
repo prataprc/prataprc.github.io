@@ -104,20 +104,28 @@ account for sort order. Instead,
 Range operation
 ===============
 
-The purpose of maintaining sorted set of JSON values is, for users
-to do range operation on the value set. This means we will have to define
-tokens for,
+The purpose of maintaining sorted set of JSON value is, for users
+to do range operation on the value set. And when such operations
+need to be performed over the wire, especially when using HTTP/JSON,
+we may have to deal with unbounded values,
 
-* From the beginning.
-* Till the end.
+* From the beginning, called minimum bound.
+* Till the end, called maximum bound.
 
-Again JSON specification do not define anything related to this. Hence
-as a proposal to extend JSON, we can include 2 reserved tokens -
+Using HTTP/JSON means we may have to serialize these values over the
+wire and once again JSON specification do not define anything related
+to this. Hence as a proposal to extend JSON, we can include 2 reserved
+tokens -
 
 * **Minbound**, that denotes from the beginning.
 * **Maxbound**, that denotes till the end.
 
 This can be added in future specification.
+
+Note that, when implementing _Range_ API as part of native libraries
+we don't have to make unbounded values as part of JSON. _Minbound_
+and _Maxbound_ is needed for serializing such queries over-the-wire
+using JSON format.
 
 [json]: https://tools.ietf.org/html/rfc8259
 [json5]: http://json5.org
