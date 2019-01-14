@@ -82,14 +82,11 @@ For example:
 * ``[10,20]`` sort before ``[30]``.
 * ``[10, "hello"]`` sort before ``[10, "hello", "world"]``.
 
-Note that length of the array shall not be considered by the comparator
-logic.
+When comparison run out of items, array with lesser number of
+items shall sort before the array with more number of items.
 
 Sort order for object values
 ============================
-
-Similar to array, length of an object value shall not be taken into
-account for sort order. Instead,
 
 * All (key,value) pairs within the object shall be presorted based on
   the key.
@@ -100,6 +97,8 @@ account for sort order. Instead,
 * When one object is a subset of another object, as in, if one object
   contain all the (key,value) properties that the other object has then
   it shall sort before the other object.
+* When comparison run out of items, object with lesser number of
+  properties shall sort before the object with more number of properties.
 
 Range operation
 ===============
