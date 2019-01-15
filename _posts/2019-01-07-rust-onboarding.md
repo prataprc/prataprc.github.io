@@ -56,6 +56,8 @@ Yes lot of patience required. For some it would be weeks, others it might be
 months. Either way a stream of “aha” moments will come and a rust-mechanic
 shall be born
 
+A collection of useful libraries
+
 [wiki1]: https://en.wikipedia.org/wiki/No_pain,_no_gain
 [python]: https://en.wikipedia.org/wiki/Python_(programming_language)
 [golang]: https://en.wikipedia.org/wiki/Go_(programming_language)
