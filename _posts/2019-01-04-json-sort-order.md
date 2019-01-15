@@ -43,7 +43,6 @@ integer and compared. This means for 64-bit floating point,
 
 * Values that are <= -2^127 will sort before all i128 integers.
 * Values that are >= 2^127-1 will sort after all i128 integers.
-* NaN, Not a Number values shall sort after all i128 integers.
 
 Also there is the [total ordering][totalorder] issue for floating
 point numbers, and JSON specification do not define _-Infinity_,
@@ -53,8 +52,17 @@ specification. And its sort order shall be defined, for the
 sake of total ordering, as
 
 * **-Infinity** shall sort before all numbers.
+* **-qNaN** negative quite-NaN shall sort after -Infinity.
+* **-sNaN** positive signalling-NaN shall sort after -qNaN.
+* **normal** and **sub-normal** shall sort after -sNaN.
+* **+sNaN** signalling-NaN shall sort after normal numbers.
+* **+qNaN** quite-NaN shall sort after +sNaN.
 * **+Infinity** shall sort after all numbers.
-* **NaN** shall sort after +Infinity.
+* **-0.0** and **+0.0** shall be treated as equal.
+* Different representation of floating point numbers are usually
+  normalised in IEEE-754 format.
+* Ordering between _sNaN_ and _qNaN_ in the same class being
+  based on the integer payload, multiplied by the sign bit.
 
 Sort order for string value
 ===========================
