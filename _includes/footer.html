@@ -24,6 +24,12 @@
   <div class="chat-on-irc">
 	<a href="https://www.irccloud.com/invite?channel=%23room7&amp;hostname=irc.mozilla.org&amp;port=6697" target="_blank"><img src="https://img.shields.io/badge/IRC-%23room7-1e72ff.svg?style=plastic"  height="40"></a>
   </div>
+
+  <script>
+    for(let h of document.querySelectorAll('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]')) {
+        h.innerHTML += ` <a href="#${h.id}" aria-hidden="true">#</a>`;
+    }
+  </script>
 </footer>
 
 

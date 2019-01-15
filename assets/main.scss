@@ -111,3 +111,11 @@ div.footer-col-3 span {
 .ui-widget {
     font-family: monaco !important;
 }
+h1, h2, h3, h4, h5, h6 {
+    &[id] > a {
+        display: none;
+    }
+    &[id]:hover > a {
+        display: inline;
+    }
+}
