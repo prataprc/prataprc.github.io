@@ -58,6 +58,12 @@ shall be born
 
 A collection of useful libraries
 
+Some useful rust books
+
+https://rust-lang-nursery.github.io/cli-wg
+https://cglab.ca/~abeinges/blah/too-many-lists/book
+https://danielkeep.github.io/tlborm/book/mbe-README.html
+
 [wiki1]: https://en.wikipedia.org/wiki/No_pain,_no_gain
 [python]: https://en.wikipedia.org/wiki/Python_(programming_language)
 [golang]: https://en.wikipedia.org/wiki/Go_(programming_language)
