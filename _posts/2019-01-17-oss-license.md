@@ -156,6 +156,10 @@ End-user never bother about the license or copyright.<br/>
 And almost always care about quality and value-for-money.
 </div>
 
+**useful links**
+
+* [opensource guide](https://opensource.guide/) from github.
+
 
 [link1]: https://janelia-flyem.github.io/licenses.html
 [link2]: https://dwheeler.com/essays/floss-license-slide.html
