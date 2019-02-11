@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "Open source and license"
-permalink: open-source-license.html
+title:  "Open source licensing"
+permalink: open-source-licensing.html
 published: true
 date: 2019-01-17
 ---
 
-Open source software is by far the most transparent and inclusive
+Open sourcing code is by far the most transparent and inclusive
 means of building trust among its authors, contributors, business
 and end-users. In this post I will try making a case for different
 open source licenses under different scenarios.
@@ -53,7 +53,7 @@ yet permit it to be part of a larger proprietary program.
 Prevent software from becoming proprietary.
 
 <span style="color: red">**Network protective**</span>:
-With the advent of server and cloud applications user can modify
+With the advent of server and cloud applications, user can modify
 open source code and host them as services for commercial use.
 GNU Affero GPL license protects authors and contributors by forcing
 users to publish their derived work even though it is hosted locally and
@@ -149,17 +149,15 @@ to its competitors.
 
 In such cases almost always a permissible license is preferred.
 
+
+**[opensource guide](https://opensource.guide/)** from github.
+
 <br>
 
 <div style="text-align: center; color: cornflowerblue; font-weight: bold;">
-End-user never bother about the license or copyright.<br/>
+End-user never bother about license or copyright.<br/>
 And almost always care about quality and value-for-money.
 </div>
-
-**useful links**
-
-* [opensource guide](https://opensource.guide/) from github.
-
 
 [link1]: https://janelia-flyem.github.io/licenses.html
 [link2]: https://dwheeler.com/essays/floss-license-slide.html
