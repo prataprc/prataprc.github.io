@@ -149,6 +149,19 @@ to its competitors.
 
 In such cases almost always a permissible license is preferred.
 
+<h4>Paying for open source</h4>
+
+Average lifespan of tech companies does not exceed the average
+lifespan of programmers. Many times programmers write code for companies
+only to see them acquired, abandoned or go bankrupt. With proprietary
+licensing, programmers have no choice but to move on and re-invent the
+wheel.
+
+It is better economics when companies release their code under a
+permissible license. Over a period, there will be enough source base
+under permissible license, like MIT, that companies don't have to
+bear the cost of developing code from scratch. It is much cheaper
+to fork existing code and adapt them to their needs.
 
 **[opensource guide](https://opensource.guide/)** from github.
 
