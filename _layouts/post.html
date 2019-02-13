@@ -19,6 +19,18 @@ layout: default
     {{ content }}
   </div>
 
+  <table style="border: none; width: 20%; margin: 0px" align=left><tr>
+    <td style="border: none; padding: 0px !important">
+      <a href="https://news.ycombinator.com/submitlink?u={{page.url | absolute_url}}&t={{page.title}}">
+      <img src="./media/hn.png" alt="Hacker News" style="margin-top: -10px; border-radius: 5px"></img>
+      </a>
+    </td>
+    <td style="border: none; padding: 0px !important">
+      <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-via="prataprc" data-show-count="false">Tweet</a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </td>
+  </tr></table>
+
   {% if site.disqus.shortname %}
     {% include disqus_comments.html %}
   {% endif %}

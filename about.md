@@ -13,7 +13,7 @@ intentional and if you find that infringing please let me know.
 
 prataprc (at) gmail (dot) com
 
-You can also ping me by clicking the bottom right corner of any page in this
+You can also tweet me by clicking the bottom right corner of any page in this
 site. If online we can have a live chat !!
 
 Thank you,
