@@ -16,4 +16,6 @@ prataprc (at) gmail (dot) com
 You can also tweet me by clicking the bottom right corner of any page in this
 site. If online we can have a live chat !!
 
+And [my story so far](../hello-world.html).
+
 Thank you,
