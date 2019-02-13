@@ -65,6 +65,20 @@ https://cglab.ca/~abeinges/blah/too-many-lists/book
 https://danielkeep.github.io/tlborm/book/mbe-README.html
 https://rust-lang-nursery.github.io/rust-cookbook/
 
+Useful Cargo sub commands
+
+cargo-audit     - Audit Cargo.lock for crates with security vulnerabilities
+cargo-asm, cargo-llvm-ir - Shows generates assembly or LLVM IR of Rust code
+clippy          - Lint your project using Clippy.
+rustfmt         - Format Rust code according to style guidelines.
+cargo-graph     - Build GraphViz DOT files of dependency graphs
+cargo-info      - Get crate information and details from crates.io
+cargo-license   - List licensing info for the project's dependencies.
+cargo-modules   - List a project's modules in a tree-like format.
+cargo-profiler  - A cargo subcommand to profile your applications.
+cargo-tarpaulin - Code coverage tool for your Rust projects
+cargo-tree      - List a project's dependencies in a tree-like format.
+
 [wiki1]: https://en.wikipedia.org/wiki/No_pain,_no_gain
 [python]: https://en.wikipedia.org/wiki/Python_(programming_language)
 [golang]: https://en.wikipedia.org/wiki/Go_(programming_language)
