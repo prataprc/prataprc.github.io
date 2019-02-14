@@ -163,7 +163,12 @@ under permissible license, like MIT, that companies don't have to
 bear the cost of developing code from scratch. It is much cheaper
 to fork existing code and adapt them to their needs.
 
-**[opensource guide](https://opensource.guide/)** from github.
+**Useful links**
+
+* [Opensource guide](https://opensource.guide/) from github.
+* [Open source in embedded devices][tivoization] aka Tivoization.
+* [Open letter to Intel][tanenbaum] by Andrew S. Tanenbaum and hacker-news
+  [discussion][hn-tanenbaum] on the same.
 
 <br>
 
@@ -178,3 +183,6 @@ And almost always care about quality and value-for-money.
 [github]: https://github.com
 [forking]: https://en.wikipedia.org/wiki/Fork_(software_development)
 [patent-grant]: https://opensource.com/article/18/3/patent-grant-mit-license
+[tivoization]: https://en.wikipedia.org/wiki/Tivoization
+[tanenbaum]: https://www.cs.vu.nl/~ast/intel/
+[hn-tanenbaum]: https://news.ycombinator.com/item?id=15642116
