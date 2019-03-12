@@ -634,6 +634,7 @@ available via brew.
 # Copy paste from clip-board
 bind P run "pbpaste | tmux load-buffer -; tmux paste-buffer"
 bind Y run "tmux save-buffer - | pbcopy"
+brew install reattach-to-user-namespace
 ```
 
 If you are using tmux, take a look at
