@@ -2,7 +2,6 @@
 layout: post
 title:  "Open source licensing"
 permalink: open-source-licensing.html
-published: true
 date: 2019-01-17
 ---
 

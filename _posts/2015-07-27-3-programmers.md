@@ -1,11 +1,8 @@
 ---
 layout: post
-title: "3 programmers"
+title: "Programer Joke: 3 programmers"
 permalink: 3-programmers.html
 ---
-
-Came across this story on the Net, not sure about the original
-author, and the story goes like this,
 
 Three programmers were asked to cross a field and go to the house
 at the other side.
@@ -39,3 +36,7 @@ ten minutes.
 "How did you do it"?, the others ask. "How come the mines didn't get you?"
 
 "Easy" he replies. "I didn't plant any mines in the first place".
+
+<span style="font-size: 0.7em;">
+\* Disclaimer: Came across this story on the Net, not sure about the original author.
+</span>
