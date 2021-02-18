@@ -2,6 +2,7 @@
 layout: post
 title: "Goparsec: Maybe combinator"
 permalink: parser-combinator-maybe.html
+category: tech
 ---
 
 Parser combinator is a technique to build top down parsing logic in any

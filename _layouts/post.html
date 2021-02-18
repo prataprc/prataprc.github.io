@@ -1,39 +1,13 @@
 ---
 layout: default
 ---
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        {{ page.date | date: date_format }}
-      </time>
-      {% if page.author %}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-      {% endif %}</p>
-  </header>
-
-  <div class="post-content e-content" itemprop="articleBody">
-    {{ content }}
+<article class="post">
+  <h1 class="post-title">{{ page.title }}</h1>
+  <div class="post-meta">
+    <time datetime="{{ page.date }}">{{ page.date | date: '%B %d, %Y' }}</time>
   </div>
 
-  <table style="border: none; width: 20%; margin: 0px" align=left><tr>
-    <td style="border: none; padding: 0px !important">
-      <a href="https://news.ycombinator.com/submitlink?u={{page.url | absolute_url}}&t={{page.title}}">
-      <img src="./media/hn.png" alt="Hacker News" style="margin-top: -10px; border-radius: 5px"></img>
-      </a>
-    </td>
-    <td style="border: none; padding: 0px !important">
-      <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-via="prataprc" data-show-count="false">Tweet</a>
-      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </td>
-  </tr></table>
+  {{ content }}
 
-  {% if site.disqus.shortname %}
-    {% include disqus_comments.html %}
-  {% endif %}
-
-  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>

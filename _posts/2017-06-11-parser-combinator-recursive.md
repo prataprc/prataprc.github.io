@@ -2,6 +2,7 @@
 layout: post
 title: "Goparsec: For recursive grammar"
 permalink: parser-combinator-recursive.html
+category: tech
 ---
 
 Input text, sometime, have recursive patterns. For example:

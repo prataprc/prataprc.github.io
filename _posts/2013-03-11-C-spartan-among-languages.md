@@ -2,6 +2,7 @@
 layout: post
 title: "C - spartan among languages"
 permalink: C-spartan-among-languages.html
+category: tech
 ---
 
 C as popularly called, is a spartan language that requires lot of self
@@ -39,12 +40,15 @@ the "features" in C language that makes it less portable ;).
 snippet on Irix, GCC and SPARC machines. You will know what "Undefined feature"
 means.
 
-```C
+{% highlight C %}
+
 void myfunc(void) {
     int i = 10;
     printf("%d %d %d %d %x ", i++, --i, ++i, ++i, i++ );
 }
-```
+
+{% endhighlight %}
+
 
 And, there are quite a few "features" like this.
 

@@ -2,6 +2,7 @@
 layout: post
 title: "Pagd: Customizing blog using pagd"
 permalink: pagd-customizing.html
+category: tech
 ---
 
 Read this [article](./blog-with-pagd.html) to know how to set up your blog
@@ -43,7 +44,7 @@ managing your site with git or mercurial then, you can add your email-id as
 part of `.gitconfig` or `.hgrc` file. Otherwise, you can simply add your
 email id along with the page content as meta data, like,
 
-```rst
+```text
 :title: <Page title for this blog article>
 :author: prataprc
 :email: <emailid>

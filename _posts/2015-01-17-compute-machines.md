@@ -2,6 +2,7 @@
 layout: post
 title: "Right-wing computers"
 permalink: compute-machines.html
+category: general
 ---
 
 Saw this [post][post-link] and started musing on computing machines ...

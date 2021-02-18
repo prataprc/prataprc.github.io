@@ -2,6 +2,7 @@
 layout: post
 title: "Erlang: Concurrency with Sudoku"
 permalink: sudoku-in-erlang.html
+category: tech
 ---
 
 For past three decades semiconductor industry promised to double the speed

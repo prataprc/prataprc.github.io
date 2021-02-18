@@ -1,0 +1,13 @@
+tech:
+  - title: Programming, tools and technical rants ..
+    post_list:
+      category: tech
+
+general:
+  - title: General rants ..
+    post_list:
+      category: general
+
+epoch:
+  - title: Hello World !!
+    url: hello-world.html

@@ -2,6 +2,7 @@
 layout: post
 title: "Goparsec: Parsing by composing functions"
 permalink: parser-combinator-composition.html
+category: tech
 ---
 
 By far the easiest way to write parser is by matching input text

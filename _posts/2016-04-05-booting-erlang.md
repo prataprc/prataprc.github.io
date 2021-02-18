@@ -2,6 +2,7 @@
 layout: post
 title: "Erlang: Overhead of booting Erlang VM"
 permalink: booting-erlang.html
+category: tech
 ---
 
 Wanted to measure the overhead of booting an Erlang virtual machine, do

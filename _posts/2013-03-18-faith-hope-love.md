@@ -2,6 +2,7 @@
 layout: post
 title: "Faith, hope, and love"
 permalink: faith-hope-love.html
+category: general
 ---
 
 Thought of doing a word play here, mashing up the 3 words, and its 3

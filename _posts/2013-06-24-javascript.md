@@ -2,6 +2,7 @@
 layout: post
 title: "JS: Javascript in a nutshell"
 permalink: javascript.html
+category: tech
 ---
 
 I like languages that can be explained within few pages of a book. Besides C,

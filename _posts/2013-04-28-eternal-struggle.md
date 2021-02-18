@@ -2,6 +2,7 @@
 layout: post
 title: "Eternal struggle"
 permalink: eternal-struggle.html
+category: general
 ---
 
 In 1947 Aug 15, a party began, to celebrate something that was vaguely similar

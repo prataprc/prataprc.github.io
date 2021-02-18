@@ -2,6 +2,7 @@
 layout: post
 title: "Golang: Variables in range loop"
 permalink: golang-variables-in-range-loop.html
+category: tech
 ---
 
 Golang provides an interesting construct to range over arrays and maps. For

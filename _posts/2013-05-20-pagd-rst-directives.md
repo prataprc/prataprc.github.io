@@ -2,6 +2,7 @@
 layout: post
 title: "Pagd: Custom directives"
 permalink: pagd-rst-directives.html
+category: tech
 ---
 
 
@@ -18,7 +19,7 @@ programming and languages - it is likely that you will be including snippets of
 code in your article. In such cases wrap your code-snippets with
 `code-block` rst-directive, like,
 
-```rst
+```text
 .. code-block:: c
 
     void myfunc(void) {
@@ -43,7 +44,7 @@ Youtube directive
 There were many occasions we wanted to refer you-tube links that can play
 inside our page. For such occasions,
 
-```rst
+```text
 .. youtube:: 7-qGKqveZaM
 ```
 
@@ -57,7 +58,7 @@ Gallery directive
 Let us say you have a bunch of charts that you would like to present them as
 image gallery for your readers,
 
-```rst
+```text
 .. gallery:: My collection of charts
     media/sudokucharts/nosmp.png
     media/sudokucharts/smp2.png
@@ -78,7 +79,7 @@ Gist directive
 If you have code gist in github and you want to embed them inside your
 article, use the following directive,
 
-```rst
+```text
 .. gist:: prataprc/5843946.js
 ```
 
@@ -87,7 +88,7 @@ https://gist.github.com/prataprc/5843946.js.
 
 To include a specific file from the gist,
 
-```rst
+```text
 .. gist:: prataprc/5843946.js?file=caveat7.js
 ```
 

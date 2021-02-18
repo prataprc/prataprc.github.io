@@ -3,6 +3,7 @@ layout: post
 title:  "Operations on JSON"
 permalink: json-operations.html
 date: 2019-01-09
+category: tech
 ---
 
 This write up aims to define common arithmetic, bit-wise, logical
@@ -101,8 +102,6 @@ Arithmetic operation
   Integer	      | Integer | integral negation
   Float		      | Float   | floating point negation
 
-<br>
-
 * **Null** is essentially a short-circuiting operand.
 * Silent overflow shall occur with all integral arithmetic operations.
 * Arithmetic operations of all other combinations, that are not listed
@@ -149,8 +148,6 @@ Bitwise operations
   lhs      | rhs       | result   | description
 -----------|-----------|----------|-------------------
   Integer  | Integer   | Integer  | Bit-wise XOR operation between two signed integers
-
-<br>
 
 * Json integers are signed, this implies that, both right shift and
   left shift are going to be [arithmetic right shift and left shift][ashr].
@@ -207,8 +204,6 @@ logical operator simply follows the Boolean truth table.
 -----------------|----------
   true           | false
   false          | true
-
-<br>
 
 Compare operation
 =================

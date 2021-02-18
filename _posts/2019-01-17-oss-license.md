@@ -3,6 +3,7 @@ layout: post
 title:  "Open source licensing"
 permalink: open-source-licensing.html
 date: 2019-01-17
+category: tech
 ---
 
 Open sourcing code is by far the most transparent and inclusive
@@ -82,7 +83,7 @@ on network.
 Note that, above descriptions only serve the purpose of introduction
 and not to be interpreted in legal terms.
 
-<h4>Hobby projects</h4>
+<h2>Hobby projects</h2>
 
 A vast majority of open source projects, under [github][github] and else
 where, start as hobby projects. It is an excellent way to practice
@@ -92,7 +93,7 @@ evolve through what is popularly called as [forking][forking].
 Having a permissive license for hobby projects encourage rapid iteration
 of algorithms and fast adoption among enthusiasts.
 
-<h4>Bootstrapping a project</h4>
+<h2>Bootstrapping a project</h2>
 
 Bootstrapping an open source project means, promises about
 publishing the source code, encouraging fellow programmers to use them
@@ -104,7 +105,7 @@ the many _protective_ license is suitable.
 When an open source project is bootstrapped by commercial organization
 or startup, one of the many _permissive_ license is suitable.
 
-<h4> Authors parting ways </h4>
+<h2> Authors parting ways </h2>
 
 More than one person can come together to bootstrap a project. In
 such cases, there might be eventualities where authors decide to
@@ -121,7 +122,7 @@ providing commercial services, may be GPL is good enough.
 And if either one of them decide to take the proprietary route,
 for one reason or the other, a permissible license works better.
 
-<h4> Business depending on open source </h4>
+<h2> Business depending on open source </h2>
 
 There are more number of business depending on open source
 products than the number of business creating and selling open
@@ -135,7 +136,7 @@ For a business whose core competency is not with software, they
 tend to choose software with protective license and as per need
 they fork and contribute back to upstream.
 
-<h4> Competition between business </h4>
+<h2> Competition between business </h2>
 
 On the other hand, when a business has software at its core competency,
 when they use open source products to build a larger product and/or
@@ -148,7 +149,7 @@ to its competitors.
 
 In such cases almost always a permissible license is preferred.
 
-<h4>Paying for open source</h4>
+<h2>Paying for open source</h2>
 
 Average lifespan of tech companies does not exceed the average
 lifespan of programmers. Many times programmers write code for companies

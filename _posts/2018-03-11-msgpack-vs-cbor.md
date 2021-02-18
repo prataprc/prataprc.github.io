@@ -2,6 +2,7 @@
 layout: post
 title:  Benchmarking Msgpack with CBOR
 permalink: msgpack-vs-cbor.html
+category: tech
 ---
 
 JSON is by far the most popular serialization format used by programmers due

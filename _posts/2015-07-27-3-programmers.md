@@ -2,6 +2,7 @@
 layout: post
 title: "Programer Joke: 3 programmers"
 permalink: 3-programmers.html
+category: general
 ---
 
 Three programmers were asked to cross a field and go to the house

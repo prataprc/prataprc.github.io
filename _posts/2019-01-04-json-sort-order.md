@@ -3,6 +3,7 @@ layout: post
 title:  "Sort order for JSON"
 permalink: json-sort-order.html
 date: 2019-01-04
+category: tech
 ---
 
 Sort order for [JSON][json] data types.

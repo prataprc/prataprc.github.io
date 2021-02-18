@@ -2,6 +2,7 @@
 layout: post
 title: "Dev: Setup dual monitors for Ubuntu"
 permalink: dual-monitor.html
+category: tech
 ---
 
 Productivity can substantially increase with dual monitors, especially with

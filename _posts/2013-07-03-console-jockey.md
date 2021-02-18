@@ -2,6 +2,7 @@
 layout: post
 title: "Dev: Console jockey"
 permalink: console-jockey.html
+category: tech
 ---
 
 Console is pairing input device - the keyboard, and output device -

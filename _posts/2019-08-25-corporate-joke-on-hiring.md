@@ -4,6 +4,7 @@ title: "Corporate Joke: On hiring"
 permalink: corporate-joke-on-hiring.html
 publish: false
 date: 2019-08-25
+category: general
 ---
 
 **Agency**: "Sir, we found 3 candidates as per your requirements. How do you want their  placements, sir?"

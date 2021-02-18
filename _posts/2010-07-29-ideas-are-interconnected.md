@@ -3,6 +3,7 @@ layout: post
 title:  "Ideas are interconnected"
 permalink: ideas-are-interconnected.html
 date: 2010-07-29
+category: general
 ---
 
 That was the time, we were growing out of DOS and BASIC systems - into the

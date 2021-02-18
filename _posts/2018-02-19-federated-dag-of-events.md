@@ -2,6 +2,7 @@
 layout: post
 title: "Federated DAG of events"
 permalink: federated-dag-of-events.html
+category: tech
 ---
 
 Following is the list of invariants that needs to be met when

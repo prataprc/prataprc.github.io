@@ -2,6 +2,7 @@
 layout: post
 title: "Erlang: Sudoku, backtracking and pathological situation"
 permalink: sudoku-pathological.html
+category: tech
 ---
 
 This write-up describes a sudoku program developed to solve 2x2, 3x3 and 4x4

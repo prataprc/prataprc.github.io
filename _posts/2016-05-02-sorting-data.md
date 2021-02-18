@@ -2,6 +2,7 @@
 layout: post
 title: "Sorting data"
 permalink: sorting-data.html
+category: tech
 ---
 
 Sorting is a human perception !

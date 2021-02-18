@@ -2,6 +2,7 @@
 layout: post
 title:  "Gofast: Standalone performance benchmark"
 permalink: gofast-standalone-performance.html
+category: tech
 ---
 
 Gofast is a binary protocol implemented in [golang][golang-link] for internet
@@ -49,7 +50,28 @@ time ./perf -c -addr localhost:9900 -do post -count 1000000
 Latency Average: 11.474µs
 Throughput: 83334 /second
 
-stats { "n_dropped":0, "n_flushes":1000015, "n_mdrops":0, "n_rx":15, "n_rxbeats":12, "n_rxbyte":493, "n_rxfin":0, "n_rxpost":12, "n_rxreq":1, "n_rxresp":2, "n_rxstart":0, "n_rxstream":0, "n_tx":1000015, "n_txbyte":548000517, "n_txfin":0, "n_txpost":1000012, "n_txreq":2, "n_txresp":1, "n_txstart":0, "n_txstream":0 }
+stats { 
+  "n_dropped":0,
+  "n_flushes":1000015,
+  "n_mdrops":0,
+  "n_rx":15,
+  "n_rxbeats":12,
+  "n_rxbyte":493,
+  "n_rxfin":0,
+  "n_rxpost":12,
+  "n_rxreq":1,
+  "n_rxresp":2,
+  "n_rxstart":0,
+  "n_rxstream":0,
+  "n_tx":1000015,
+  "n_txbyte":548000517,
+  "n_txfin":0,
+  "n_txpost":1000012,
+  "n_txreq":2,
+  "n_txresp":1,
+  "n_txstart":0,
+  "n_txstream":0
+}
 request stats: n:1000000 mean:11.474µs var:2m25.205163142s sd:381.057µs
 ./perf -c -addr localhost:9900 -do post -count 1000000  6.53s user 18.04s system 200% cpu 12.229 total
 ```

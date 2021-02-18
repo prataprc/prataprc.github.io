@@ -2,9 +2,8 @@
 layout: post
 title:  "Rust over C"
 permalink: rust-over-c.html
-redirect_from:
-    - /rust-over-c
 date: 2018-10-24
+category: tech
 ---
 
 Rust is the new systems language which can, in a way, truly challenge

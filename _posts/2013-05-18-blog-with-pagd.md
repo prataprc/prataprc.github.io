@@ -2,6 +2,7 @@
 layout: post
 title: "Pagd: Blog with pagd and github"
 permalink: blog-with-pagd.html
+category: tech
 ---
 
 First time I started blogging it was with [blogspot][blogspot-link], which

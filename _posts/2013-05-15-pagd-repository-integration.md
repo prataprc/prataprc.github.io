@@ -2,6 +2,7 @@
 layout: post
 title: "Pagd: Integrate pagd with git / hg"
 permalink: pagd-repository-integration.html
+category: tech
 ---
 
 Read this [article](./blog-with-pagd.html) to know how to set up your blog

@@ -1,0 +1,143 @@
+// -------------- THEME SWITCHER -------------- //
+@mixin dark-appearance {
+  filter: invert(1);
+  img {
+    filter: invert(1);
+
+    &.ioda { filter: invert(0); }
+  }
+}
+
+body[a="dark"] { @include dark-appearance; }
+
+
+@media (prefers-color-scheme: dark) {
+  body[a="auto"] { @include dark-appearance; }
+}
+// -------------------------------------------- //
+
+// bg color is also needed in html in order to
+// block body's background propagation
+// see: https://stackoverflow.com/a/61265706
+html, body { background: white; }
+
+html { height: 100%; }
+
+body {
+  color: black;
+  font-family: monospace;
+  margin: 0;
+  min-height: 100%;
+}
+
+h1.post-title { 
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: normal;
+  font-size: 1.8em;
+  text-align: center;
+  color: #222233;
+  letter-spacing: -0.02em;
+  margin-bottom: 3px;
+}
+div.post-meta {
+  font-family: "Lucida Grande", Tahoma;
+  font-size: .8em;
+  color: #666666;
+  margin: 0px 0px 40px 0px;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 2rem;
+  font-weight: normal;
+}
+
+p { margin: 1rem 0; }
+
+li { margin: 0.4rem 0; }
+
+*:target { background: yellow; }
+
+table, th, td {
+  border: thin solid black;
+  border-collapse: collapse;
+  padding: 0.4rem;
+}
+
+article.home a {
+  text-decoration: none;
+}
+
+article.post {
+  font-family: Verdana, sans-serif;
+  color: #222233;
+  font-size: 0.8em;
+  letter-spacing: 0.01em;
+  line-height: 1.5em;
+}
+
+header, main.w, footer, hr#layout {
+  max-width: 50%;
+  min-width: 800px;
+  margin: 0 auto;
+}
+
+header span#site-title {
+    width:70%;
+    font-family:cursive;
+    font-size:1em;
+    color: #00203FFF;
+}
+
+header nav {
+    text-align: right;
+    vertical-align:middle;
+}
+
+header table, header th, header td {
+  width: 100%;
+  border: none;
+  padding: 20px 5px 5px 5px;
+}
+
+footer {
+    padding-bottom: 1em;
+}
+footer table, footer th, footer td {
+  width: 100%;
+  border: none;
+}
+
+blockquote {
+  font-style: italic;
+  border: thin solid black;
+  padding: 1rem;
+
+  p { margin: 0; }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.blinkcursor {
+  animation-name: flashcursor;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-play-state: running;
+}
+@keyframes flashcursor {
+  0%  {color: black;}
+  80%  {color: black;}
+  100%  {color: white;}
+}
+
+code.highlighter-rouge {
+  background-color: #e0e0eb;
+  color: black;
+}

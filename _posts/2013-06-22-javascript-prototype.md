@@ -2,6 +2,7 @@
 layout: post
 title: "JS: Prototype inheritance in Javascript"
 permalink: javascript-prototype.html
+category: tech
 ---
 
 This post will discuss exclusively about Javascript's prototype inheritance.

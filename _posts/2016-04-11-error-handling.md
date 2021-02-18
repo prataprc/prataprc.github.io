@@ -2,6 +2,7 @@
 layout: post
 title: "Error handling in programming languages"
 permalink: error-handling.html
+category: tech
 ---
 
 **Golang** says, multi value returns or

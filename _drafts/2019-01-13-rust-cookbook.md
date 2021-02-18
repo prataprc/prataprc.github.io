@@ -3,6 +3,7 @@ layout: post
 title:  "Rust Cookbook"
 permalink: rust-cookbook.html
 published: false
+category: tech
 ---
 
 ()

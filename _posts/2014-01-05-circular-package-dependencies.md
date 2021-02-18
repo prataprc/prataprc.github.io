@@ -2,6 +2,7 @@
 layout: post
 title: "Python: Circular package dependencies"
 permalink: circular-package-dependencies.html
+category: tech
 ---
 
 I am developing `pluggdapps`, `tayra` and `tayrakit`, and releasing them

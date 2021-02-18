@@ -2,6 +2,7 @@
 layout: post
 title: "JS: Caveats in Javascript"
 permalink: javascript-caveats.html
+category: tech
 ---
 
 Every language has exceptional situations to common rules that are

@@ -2,6 +2,7 @@
 layout: post
 title: "Pagd: Social interfaces within pagd"
 permalink: pagd-social.html
+category: tech
 ---
 
 Read this [article](./blog-with-pagd.html) to know how to set up your blog
