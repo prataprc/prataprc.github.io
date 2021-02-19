@@ -19,18 +19,66 @@ body[a="dark"] { @include dark-appearance; }
 // bg color is also needed in html in order to
 // block body's background propagation
 // see: https://stackoverflow.com/a/61265706
+
+// -------- layout ------ //
 html, body { background: white; }
-
 html { height: 100%; }
-
 body {
   color: black;
   font-family: monospace;
   margin: 0;
   min-height: 100%;
 }
+header, main.w, footer, hr#layout {
+  width: 50%;
+  min-width: 800px;
+  margin: 0 auto;
+}
+header span#site-title {
+    width:60%;
+    font-family:cursive;
+    font-size:1.5em;
+    color: #00203FFF;
+}
+header nav {
+    text-align: right;
+    vertical-align:middle;
+}
+header nav a:link, header nav a:visited {
+    color: #457B9D;
+}
+header nav a:hover {
+    color: #1D3557;
+}
+header table, header th, header td {
+  width: 100%;
+  border: none;
+  padding: 20px 5px 5px 5px;
+}
+footer {
+    padding-bottom: 1em;
+}
+footer table, footer th, footer td {
+  width: 100%;
+  border: none;
+}
+div#tech-focus {
+  width: 12em;
+  float: right;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  border-left: 1px #457B9D solid;
+}
 
-h1.post-title { 
+// -------------- content --------------- //
+
+article.post, article.page, article.home {
+  font-family: Verdana, sans-serif;
+  color: #222233;
+  font-size: 1em;
+  letter-spacing: 0.01em;
+  line-height: 1.5em;
+}
+h1.post-title {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: normal;
   font-size: 1.8em;
@@ -47,82 +95,34 @@ div.post-meta {
   text-align: center;
   letter-spacing: 0.1em;
 }
-
 h1, h2, h3, h4, h5, h6 {
   margin-top: 2rem;
   font-weight: normal;
 }
-
 p { margin: 1rem 0; }
-
 li { margin: 0.4rem 0; }
-
-*:target { background: yellow; }
-
 table, th, td {
   border: thin solid black;
   border-collapse: collapse;
   padding: 0.4rem;
 }
-
-article.home a {
-  text-decoration: none;
-}
-
-article.post {
-  font-family: Verdana, sans-serif;
-  color: #222233;
-  font-size: 0.8em;
-  letter-spacing: 0.01em;
-  line-height: 1.5em;
-}
-
-header, main.w, footer, hr#layout {
-  max-width: 50%;
-  min-width: 800px;
-  margin: 0 auto;
-}
-
-header span#site-title {
-    width:70%;
-    font-family:cursive;
-    font-size:1em;
-    color: #00203FFF;
-}
-
-header nav {
-    text-align: right;
-    vertical-align:middle;
-}
-
-header table, header th, header td {
-  width: 100%;
-  border: none;
-  padding: 20px 5px 5px 5px;
-}
-
-footer {
-    padding-bottom: 1em;
-}
-footer table, footer th, footer td {
-  width: 100%;
-  border: none;
-}
-
 blockquote {
   font-style: italic;
   border: thin solid black;
   padding: 1rem;
-
   p { margin: 0; }
 }
-
 img {
   max-width: 100%;
   display: block;
   margin: 0 auto;
 }
+*:target { background: yellow; }
+article.home a {
+  text-decoration: none;
+}
 
+// ------------ special cases ------------ //
 .blinkcursor {
   animation-name: flashcursor;
   animation-duration: 1s;
@@ -136,8 +136,26 @@ img {
   80%  {color: black;}
   100%  {color: white;}
 }
-
 code.highlighter-rouge {
   background-color: #e0e0eb;
   color: black;
+}
+div#tech-focus div {
+  line-height: 1.2em;
+  padding-bottom: 2px;
+  border-bottom: 1px #e0e0eb solid;
+  padding-left: 5px;
+}
+div#tech-focus div.title {
+  font-size: .9em;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  background: #457B9D;
+  color: white;
+  padding-left: 5px;
+}
+div#tech-focus a {
+  font-size: .7em;
+  font-weight: bold;
+  text-decoration: underline;
 }

@@ -3,9 +3,64 @@ layout: default
 ---
 
 <article class="home">
+    <div id="tech-focus">
+      <div class="title">Technology focus</div>
+      <div>
+        <a href="https://www.json.org">json</a>
+        <a href="https://cbor.io">cbor</a>
+        <a href="https://en.wikipedia.org/wiki/Diff">diff</a>
+      </div>
+      <div>
+        <a href="https://prataprc.github.io/jsonsort.io">collation</a>
+        <a href="https://prataprc.github.io/astquery.io">astquery</a>
+      </div>
+      <div>
+        <a href="http://aleksandar-prokopec.com/resources/docs/ctries-snapshot.pdf">ctrie</a>
+        <a href="https://github.com/bnclabs/xorfilter">xorfilter</a>
+        <a href="https://roaringbitmap.org">roaring</a>
+        <a href="http://www.cs.princeton.edu/~rs/talks/LLRB/LLRB.pdf">llrb</a>
+        <a href="https://github.com/bnclabs/robt">btree</a>
+        <a href="https://en.wikipedia.org/wiki/Rope_(data_structure)">rope</a>
+        <a href="https://raft.github.io">raft</a>
+        <a href="https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type">crdt</a>
+        <a href="https://arxiv.org/pdf/2004.00107.pdf">merkel-crdt</a>
+        <a href="https://quicwg.org">quic</a>
+        <a href="https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf">kademlia</a>
+        <a href="https://en.wikipedia.org/wiki/Parser_combinator">parser-combinator</a>
+      </div>
+      <div>
+        <a href="https://github.com/bnclabs/diskio">durability</a>
+        <a href="https://ipfs.io">ipfs</a>
+        <a href="https://multiformats.io">multiformats</a>
+      </div>
+      <div>
+        <a href="http://cristal.inria.fr/~weis/info/commandline.html">terminal</a>
+        <a href="https://github.com/tmux/tmux">tmux</a>
+        <a href="https://www.vim.org">vim</a>
+        <a href="https://github.com/prataprc/monster">monster</a>
+        <a href="https://en.wikipedia.org/wiki/Real-time_operating_system">rtos</a>
+        <a href="https://www.ledger-cli.org">ledger</a>
+      </div>
+      <div>
+        <a href="https://www.rust-lang.org">rust</a>
+        <a href="https://golang.org">golang</a>
+        <a href="https://en.wikipedia.org/wiki/JavaScript">javascript</a>
+        <a href="https://ohmyz.sh">zsh</a>
+      </div>
+      <div>
+        <a href="https://www.w3.org/html">html</a>
+        <a href="https://www.w3schools.com/css">css</a>
+        <a href="https://www.w3.org">web</a>
+      </div>
+    </div>
+
+    <div id="proj-focus">
+    </div>
+
     {% include menu_item.html collection=site.data.menu.tech %}
     {% include menu_item.html collection=site.data.menu.general %}
     {% include menu_item.html collection=site.data.menu.epoch %}
+
 </article>
 
 {{ content }}
