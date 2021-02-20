@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Goparsec: Parsing by composing functions"
+title: "Goparsec: Parsing by composing"
 permalink: parser-combinator-composition.html
 category: tech
 ---

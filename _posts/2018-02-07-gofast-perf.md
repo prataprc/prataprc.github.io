@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Gofast: Standalone performance benchmark"
+title:  "Gofast: performance benchmark"
 permalink: gofast-standalone-performance.html
 category: tech
 ---

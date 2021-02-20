@@ -56,11 +56,13 @@ header table, header th, header td {
   padding: 20px 5px 5px 5px;
 }
 footer {
-    padding-bottom: 1em;
+  padding-bottom: 2em;
+  font-size: 1.3em;
 }
 footer table, footer th, footer td {
   width: 100%;
   border: none;
+  padding: 0px;
 }
 div#tech-focus {
   width: 12em;
