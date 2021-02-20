@@ -11,13 +11,20 @@
         {{ content }}
     </main>
 
-    <hr id="layout"/>
+    <hr id="layout" style="margin-top: 20px;"/>
     {% include footer.html %}
 
     {% if site.goat_counter and jekyll.environment == "production" %}
       {% include goat_counter.html %}
     {% endif %}
 
+    <script>
+      // Append at the end of <body>; can use a CSS selector to append
+      // somewhere else.
+      // Be sure to call this *after* the count.js script is loaded.
+      window.goatcounter.visit_count({append: 'body'})
+    </script>
+    <script data-goatcounter="https://prataprc.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   </body>
 
   {% include json-ops-tabs.html %}
