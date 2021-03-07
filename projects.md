@@ -18,37 +18,37 @@ Active projects (in rust)
 
 Am most active with the following projects, contributions are very much welcome :)
 
-**[Json][git-jsondata]**, json toolkit tuned for big-data, document database.
+**[json][git-jsondata]**, json toolkit tuned for big-data, document database.
 
-**[Xorfilter][git-xorfilter]**, faster and smaller than bloom and cuckoo filters,
+**[xorfilter][git-xorfilter]**, faster and smaller than bloom and cuckoo filters,
 for immutable set of keys.
 
-**[Read-only-btree][git-robt]**, key-value index using immutable, read only btree.
+**[read-only-btree][git-robt]**, key-value index using immutable, read only btree.
 
-**[Wral][git-wral]**, write ahead logging for rust applications.
+**[wral][git-wral]**, write ahead logging for rust applications.
 
-**[Ppar][git-ppar]**, persistent array using a variant of rope data structure.
+**[ppar][git-ppar]**, persistent array using a variant of rope data structure.
 
-**[Ppom][git-ppom]**, persistent ordered map using left-leaning-red-black-tree.
+**[ppom][git-ppom]**, persistent ordered map using left-leaning-red-black-tree.
 
-**[Cmap][git-cmap]**, concurrent unordered key-value map, support multi-writer concurrency.
+**[cmap][git-cmap]**, concurrent unordered key-value map, support multi-writer concurrency.
 
-**[Mkit][git-mkit]**, collection of types and functions used by other libraries
+**[mkit][git-mkit]**, collection of types and functions used by other libraries
 and applications.
 
-**[Ixperf][git-ixperf]**, performance toolkit for indexing algorithms.
+**[ixperf][git-ixperf]**, performance toolkit for indexing algorithms.
 
-**[Diskio][git-diskio]**, performance toolkit for storage devices.
+**[diskio][git-diskio]**, performance toolkit for storage devices.
 
-**[Ted][git-ted]**, vim inspired text editor, backed by [rope][rope-algo] data structure
+**[ted][git-ted]**, vim inspired text editor, backed by [rope][rope-algo] data structure
 for buffer management and [tree-sitter][tree-sitter] for syntax highlighting. There is
 a long term plan to make this into a terminal tool kit for app-development using
 buffers, syntax highlighting and events.
 
-**[Drand client in rust][git-drand-client]**, distributed randomness beacon client
+**[drand client in rust][git-drand-client]**, distributed randomness beacon client
 for [drand.love][drand-love].
 
-**[Multiformats][git-multiformats]**, **[peer-id][git-peerid]**, **[cid][git-cid]**,
+**[multiformats][git-multiformats]**, **[peer-id][git-peerid]**, **[cid][git-cid]**,
 implement [multiformats.io][multiformats-io] in rust-lang. This specification is
 part of the [ipfs-project][ipfs-io] which also define [peer-id][peerid-spec] and
 [cid][cid-spec] specifications.
