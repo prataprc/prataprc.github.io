@@ -4,6 +4,8 @@ title: Active and archived work
 permalink: projects.html
 ---
 
+<a id="goto-github" href="https://github.com/prataprc">Goto github account</a>
+
 All of my contributions are hosted in github, most of them are open-sourced
 under permissive license like MIT or BSD. I have tried to classify
 my activities and contributions as **active** and **archive**. Note that archived

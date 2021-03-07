@@ -161,3 +161,16 @@ div#tech-focus a {
   font-weight: bold;
   text-decoration: underline;
 }
+a#goto-github {
+  position: relative;
+  float: right;
+  top: -2.6em;
+  font-weight: bold;
+  text-decoration: underline;
+}
+a#goto-github:link, a#goto-github:visited {
+  color: #457B9D;
+}
+a#goto-github:hover {
+  color: #1D3557;
+}
