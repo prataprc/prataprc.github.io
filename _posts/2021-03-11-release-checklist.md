@@ -53,7 +53,8 @@ Release checklist for rust library
 We may have to install [cargo-flamegraph][cargo-flamegraph] and
 [cargo-spellcheck][cargo-spellcheck] via `cargo install` command.
 
-Following is the general directoy layout:
+Project layout
+--------------
 
 * __Cargo.toml__, cargo manifest file.
 * __check.sh__, CI script for testing.
@@ -66,6 +67,8 @@ Following is the general directoy layout:
 * __src__, library
   * __src/bin__, binary-tools to support/work-with library artifacts.
 * __TODO.md__
+
+This is based on cargo's recommended [project-layout][project-layout].
 
 
 Build matrix
@@ -92,3 +95,4 @@ max_width = 90
 [cargo-spellcheck]: https://github.com/drahnr/cargo-spellcheck
 [log-facade]: https://github.com/rust-lang/log
 [ci]: https://en.wikipedia.org/wiki/Continuous_integration
+[project-layout]: https://doc.rust-lang.org/cargo/guide/project-layout.html
