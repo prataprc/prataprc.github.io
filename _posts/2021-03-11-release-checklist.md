@@ -81,7 +81,7 @@ Build matrix
 Rustfmt
 -------
 
-Following is my general preference for [rust-fmt[rustfmt-cfg].
+Following is my general preference for [rust-fmt][rustfmt-cfg].
 
 ```toml
 max_width = 90
