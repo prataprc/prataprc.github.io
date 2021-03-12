@@ -34,7 +34,7 @@ Release checklist for rust library
 * Makefile, the g(old)en simplicity from yester-years. All the make targets
   shall pass with 0 warnings and 0 errors.
   * __clean__ target, remove file created by [CI][ci] scripts.
-  * __build__ target, follow the [build matrix][#build-matrix] and add them
+  * __build__ target, follow the [build matrix](#build-matrix) and add them
     under this target.
   * __prepare__ target, run the continuous-integration scripts as part of
     release preparation.
