@@ -36,8 +36,9 @@ types defined by JSON standard.
 
 Following bar chart show the time taken to encode basic data types - nil,
 int64, uint64, bool, bytes, string, array and map. This benchmark was done in
-[go-language](golang), using [msgpack](msgpack) package and [gson](gson)
-package.
+_[go-language](golang), using [msgpack](msgpack) package and [gson](gson)
+package_. Source code is available [here][msgpck-bench], [here][gson-bench1]
+and [here][gson-bench2].
 
 ![Encode benchmark between msgpack and cbor](media/gsoncharts/enc-msgpack-gson.svg)
 
@@ -70,3 +71,6 @@ comparable efficiency.
 [golang]: http://golang.org
 [msgpack]: https://github.com/vmihailenco/msgpack
 [gson]: https://github.com/bnclabs/gson
+[msgpck-bench]: https://github.com/bnclabs/gson/blob/master/bench/msgpack_test.go
+[gson-bench1]: https://github.com/bnclabs/gson/blob/master/value_cbor_test.go
+[gson-bench2]: https://github.com/bnclabs/gson/blob/master/cbor_value_test.go
