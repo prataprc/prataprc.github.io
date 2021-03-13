@@ -21,11 +21,16 @@ Release checklist for rust library
 * Review macros - `println!()`, `panic!()`, `unreachable!()`,
   `unimplemented!()`. Make sure they are obsolute necessary. Preferably
   replace `println!()` with [log facade][log-facade].
+* Check for `dead_code`.
+* Check for ignore test cases and if present add them to CI.
 * Cleanup unwanted `fmt::Debug` and `fmt::Display` traits from types.
+* Replace `assert!()` with Error return or `debug_assert!()`.
 * Calls to `unwrap()`/`expect()` can panic. Make sure the panic is intended,
   preferrabley replace unwrap() with expect() call.
+* Review `ok()` method on `Result` and `Option` types. They silently ignore errors.
 * `"as"` type casting is dangerous. Replace them with `try_into()` or
   `try_from()` call.
+* Review `unsafe { .. }` blocks and document them.
 * README.md must be present, and shall contains
   * Link to rust-doc.
   * Short description.
