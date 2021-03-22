@@ -58,6 +58,19 @@ Release checklist for rust library
 We may have to install [cargo-flamegraph][cargo-flamegraph] and
 [cargo-spellcheck][cargo-spellcheck] via `cargo install` command.
 
+Declare for
+-----------
+
+Wherever applicable declare a library for the following features.
+
+* Zero heap allocations.
+* Zero dependencies.
+* No-panic.
+* No-unsafe.
+* Depth-limited recursion (or) No-recursion.
+* `no_std` compatible.
+* `WASM` compatible.
+
 Project layout
 --------------
 
