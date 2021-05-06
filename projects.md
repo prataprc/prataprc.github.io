@@ -118,8 +118,8 @@ templates. [Tayra documentation][tayra-doc-link] hosted in python cheese shop.
 [Eazytext][eazytext-link], wiki markup language, similar to [Markdown][markdown-link],
 but provide more options to user at the expense of looking little cluttered.
 
-[Pagd][pagd-link], static site generator, this site was generated using
-it. [Pagd documentation][pagd-doc-link] hosted in python cheese shop.
+[Pagd][pagd-link], static site generator. [Pagd documentation][pagd-doc-link] hosted in
+python cheese shop.
 
 All of them are in archive state. May be when internet matures into a truly
 distributed network we may spawn a new avatar of discover-zeta based on
