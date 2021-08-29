@@ -57,6 +57,7 @@ Release checklist for rust library
   * __major__: backward incompatible API changes.
   * __minor__: backward compatible API Changes.
   * __patch__: bug fixes.
+* If CI is setup, then make sure that latest commit upto release preperation has passed.
 * Create a git-tag for the new version.
 * Cargo publish the new version.
 
