@@ -53,6 +53,7 @@ Release checklist for rust library
   * __spellcheck__ target, to check for spelling mistakes in rustdoc using
     [carg-spellcheck][cargo-spellcheck]
 * Documentation Review.
+* Add release notes in `RELEASE.md`.
 * Bump up the version:
   * __major__: backward incompatible API changes.
   * __minor__: backward compatible API Changes.
