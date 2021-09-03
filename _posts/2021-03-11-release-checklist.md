@@ -24,7 +24,7 @@ Release checklist for rust library
 * Check for `dead_code`.
 * Check for ignore test cases and if present add them to CI.
 * Cleanup unwanted `fmt::Debug` and `fmt::Display` traits from types.
-* Remove trait contraints on type and implementations, as much as possible.
+* Remove trait constraints on type and implementations, as much as possible.
   * Use MaybeUninit, instead of `Default`.
   * Use move-semantics instead of `Copy` and `Clone` traits.
   * Reduce the function specific trait constraints to function-signatures.
