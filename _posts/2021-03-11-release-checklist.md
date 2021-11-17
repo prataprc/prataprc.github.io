@@ -41,6 +41,8 @@ Release checklist for rust library
   * Short description.
   * Useful links.
   * Contribution guidelines.
+* Check for possible upgrades to required crates.
+* Check for LICENSE compatibility.
 * Makefile, the g(old)en simplicity from yester-years. All the make targets
   shall pass with 0 warnings and 0 errors.
   * __clean__ target, remove file created by [CI][ci] scripts.
