@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Faith, hope, and love"
+published: false
 permalink: faith-hope-love.html
 category: general
 ---

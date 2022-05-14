@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Eternal struggle"
+published: false
 permalink: eternal-struggle.html
 category: general
 ---
