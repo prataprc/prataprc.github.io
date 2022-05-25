@@ -3,5 +3,4 @@
 source "https://rubygems.org"
 gem "jekyll-feed"
 gem 'jekyll-redirect-from'
-gem "jekyll-theme-primer"
-gemspec
+gem "no-style-please", "~> 0.4"
