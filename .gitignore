@@ -5,3 +5,4 @@ _site
 *.gem
 *.swp
 .jekyll-metadata
+public/
